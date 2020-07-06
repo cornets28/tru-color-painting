@@ -1,20 +1,20 @@
 import React from "react";
 import "./App.css";
+import Navbar from "./component/Navbar";
+import AboutUs from './component/AboutUs';
+import HouseList from "./component/HouseList";
+import HouseDetails from "./component/HouseDetails";
+import PageNotFound from "./component/PageNotFound";
+
 
 function App() {
   return (
-    <div className="container">
-      <h1>Hello from app</h1>
-
-      <div className="row">
-        <div className="col-6">number 1</div>
-        <div className="col-6">
-          <span>
-            <i className="fas fa-home" />
-          </span>
-        </div>
-      </div>
-
+    <React.Fragment>
+      <Navbar />
+      <AboutUs />
+      <HouseList />
+      <HouseDetails />
+      <PageNotFound />
       {/* <div class="preloader">
         <div class="p-wrapper">
         <div class="spinner">
@@ -28,7 +28,7 @@ function App() {
         </div>
         </div>
       </div> */}
-    </div>
+    </React.Fragment>
   );
 }
 
