@@ -2,6 +2,7 @@ import React from "react";
 
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./component/Navbar";
 import AboutUs from './component/AboutUs';
 import HouseList from "./component/HouseList";
@@ -14,6 +15,12 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
+      <div className="container">
+        <div className="row">
+          <div className="col-6">Num 1</div>
+          <div className="col-6"><span><div className="i fas fa-home"></div></span></div>
+        </div>
+      </div>
       <Switch>
         <Route exact path="/" component={HouseList} />
         <Route path="/details" component={HouseDetails} />
