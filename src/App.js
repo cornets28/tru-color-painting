@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Switch, Route } from "react-router-dom";
 import "./App.css";
 import Navbar from "./component/Navbar";
 import AboutUs from './component/AboutUs';
@@ -12,10 +14,13 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <AboutUs />
-      <HouseList />
-      <HouseDetails />
-      <PageNotFound />
+      <Switch>
+        <Route exact path="/" component={HouseList} />
+        <Route path="/details" component={HouseDetails} />
+        <Route path="/aboutUs" component={AboutUs} />
+        <Route component={PageNotFound} />
+      </Switch>
+
       <Footer />
       {/* <div class="preloader">
         <div class="p-wrapper">
