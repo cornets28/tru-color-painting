@@ -1,25 +1,41 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import { Switch, Route } from "react-router-dom";
+import "./App.css";
+import Navbar from "./component/Navbar";
+import AboutUs from './component/AboutUs';
+import HouseList from "./component/HouseList";
+import HouseDetails from "./component/HouseDetails";
+import PageNotFound from "./component/PageNotFound";
+import Footer from "./component/Footer";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <Navbar />
+      <Switch>
+        <Route exact path="/" component={HouseList} />
+        <Route path="/details" component={HouseDetails} />
+        <Route path="/aboutUs" component={AboutUs} />
+        <Route component={PageNotFound} />
+      </Switch>
+
+      <Footer />
+      {/* <div class="preloader">
+        <div class="p-wrapper">
+        <div class="spinner">
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+          <i></i>
+        </div>
+        </div>
+      </div> */}
+    </React.Fragment>
   );
 }
 
