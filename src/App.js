@@ -5,6 +5,7 @@ import AboutUs from './component/AboutUs';
 import HouseList from "./component/HouseList";
 import HouseDetails from "./component/HouseDetails";
 import PageNotFound from "./component/PageNotFound";
+import Footer from "./component/Footer";
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <HouseList />
       <HouseDetails />
       <PageNotFound />
+      <Footer />
       {/* <div class="preloader">
         <div class="p-wrapper">
         <div class="spinner">
