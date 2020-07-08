@@ -105,7 +105,7 @@ table {
 }
 /* ---- End Default styles ------*/
 
-/* Preloder */
+/* --- Preloder---- */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -257,4 +257,137 @@ div.spinner i:nth-child(7) {
         transform: rotate(360deg);
    }
 }
-/*End Preloder */
+/*--- End Preloder--- */
+
+/**--- Hamburger menu Menu ---*/
+
+button.navbar-toggler.nav-icon span.navbar-toggler-icon {
+    opacity: 0;
+}
+button.navbar-toggler.nav-icon{
+    position: relative;
+    transition: .5s ease;
+}
+button.navbar-toggler.nav-icon::before {
+    position: absolute;
+    z-index: 999;
+    color: #090909;
+    font-size: 30px;
+    left: 17px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f00d"
+}
+
+.navbar-toggler:not(:disabled):not(.disabled) {
+    cursor: pointer;
+    background: var(--lightYellow)
+     /* #ffe268; */
+}
+
+.navbar-light .navbar-toggler {
+   border: none;
+}
+
+button:focus {
+    outline: inherit;
+  
+}
+/**--- End Hamburger menu Menu ---*/
+
+/* --- Heder-area ---*/
+.paint-nav .navbar-brand img{
+    height: 110px;
+}
+.paint-nav .navbar-light .navbar-nav li.nav-item {
+    padding: 12px 0px 5px;
+    height: 50px;
+    cursor: pointer;
+    position: relative;
+    margin-top: 18px;
+    min-width: 102px;
+    font-weight: 300;
+    font-size: 20px;
+    text-align: center;
+}
+.paint-nav .navbar-light .navbar-nav .nav-link {
+    padding: 10px 12px;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: rgb(5, 5, 5);
+}
+.paint-nav .navbar-light {
+    position: relative;
+    background-color: var(--defaultDark)!important;
+}
+.paint-nav .navbar-light .navbar-nav li.nav-item.dropdown>a:after {
+    position: absolute;
+    content: '\f0d7';
+    right: 0px;
+    top: 10px;
+    display: none;
+}
+.paint-nav .navbar-light .navbar-nav li.nav-item ul li.dropdown-item {
+    position: relative;
+}
+.paint-nav .navbar-light .navbar-nav li.nav-item ul li.dropdown-item.dd-caret:after {
+    position: absolute;
+    content: '\f0da';
+    right: 8px;
+    top: 5px;
+    display: none;
+}
+.paint-nav .navbar-light .navbar-nav .last-child {
+    min-width: 180px;
+    padding-left: 40px;
+}
+.paint-nav .navbar-light .navbar-nav .nav-link:hover{
+    color: #000;
+    text-decoration: underline;
+    transition: .5s ease;
+    font-weight: 600;
+}
+
+.paint-nav .bg-light {
+    background-color: transparent!important;
+}
+
+header.header-area.nav-fixed{
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    animation-duration: 0.8s;
+    animation-name: fadeInDown;
+    animation-timing-function: ease-in-out;
+    box-shadow: 0 4px 12px -4px rgba(0, 0, 0, 0.75);
+    background-image: none;
+}
+
+header.header-area {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    left: 0;
+    background: #000;
+}
+
+.logo {
+    margin: -8px;
+}
+.navbar-nav.hp-1-nav {
+    background-image: url(/images/nav-backg.png);
+    left: 220px;
+    width: 80%;
+    height: 100px;
+    top: 17px;
+    padding-left: 61px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 7%;
+    position: absolute;
+}
+/* --- End Heder-area ---*/
