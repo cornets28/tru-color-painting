@@ -514,6 +514,13 @@ header.header-area {
   position: absolute;
   left: 0;
   top: 5px;
+   margin-left: -11rem;
+   font-weight: bold;
+ 
+  /* background-color: rgb(153, 19, 19); */
+}
+.sp-input h4 {
+ 
 }
 .sp-subscription-form .sp-input {
   position: relative;
@@ -595,7 +602,7 @@ ul.sicon-frist li:first-child {
 }
 .about-company h4 {
   padding-bottom: 20px;
-  color: var(--darkBleu);
+  color: var(--lightBleu);
   font-weight: 500;
 }
 
