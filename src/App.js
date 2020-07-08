@@ -14,6 +14,19 @@ import Footer from "./component/Footer";
 function App() {
   return (
     <React.Fragment>
+      {/* <div class="preloader">
+        <div class="p-wrapper">
+          <div class="spinner">
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+            <i></i>
+          </div>
+        </div>
+      </div> */}
       <Navbar />
       <Switch>
         <Route exact path="/" component={HouseList} />
@@ -23,19 +36,6 @@ function App() {
       </Switch>
 
       <Footer />
-      {/* <div class="preloader">
-        <div class="p-wrapper">
-        <div class="spinner">
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-          <i></i>
-        </div>
-        </div>
-      </div> */}
     </React.Fragment>
   );
 }
