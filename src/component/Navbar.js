@@ -6,16 +6,16 @@ import Logo from '../logo.png'
 export default class Navbar extends Component {
   render() {
     return (
-      <header class="header-area">
-        <div class="container">
-          <div class="paint-nav">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <header className="header-area">
+        <div className="container">
+          <div className="paint-nav">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light">
               <Link to="/">
                 <img className="logo" src={Logo} alt="logo" />
               </Link>
 
               {/* <button
-                class="navbar-toggler"
+                className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
                 data-target="#navbarNav"
@@ -23,36 +23,44 @@ export default class Navbar extends Component {
                 aria-expanded="false"
                 aria-label="Toggle navigation"
               >
-                <span class="navbar-toggler-icon"></span>
+                <span className="navbar-toggler-icon"></span>
               </button> */}
-              <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav hp-1-nav mt-2">
-                  <li class="nav-item">
-                    <Link class="nav-link" to="/">
+              <div className="collapse navbar-collapse" id="navbarNav">
+                <ul className="navbar-nav hp-1-nav mt-2">
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/">
                       <h6>Home</h6>
                     </Link>
                   </li>
 
-                  <li class="nav-item">
-                    <Link class="nav-link" to="/about-us">
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/about-us">
                       <h6>About Us</h6>
                     </Link>
                   </li>
 
-                  <li class="nav-item">
-                    <Link class="nav-link" to="/details">
+                  <li className="nav-item">
+                    <Link className="nav-link" to="/details">
                       <h6>House Details</h6>
                     </Link>
                   </li>
 
-                  <li class="nav-item">
-                    <a class="nav-link mest" data-toggle="modal" data-target="">
+                  <li className="nav-item">
+                    <Link
+                      className="nav-link mest"
+                      data-toggle="modal"
+                      data-target=""
+                      to="/"
+                    >
                       <h6>Estimate</h6>
-                    </a>
+                    </Link>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link last-child" href="tel:+4487788589(99)">
-                      <h6> Call : +55 5978 1509 (89)</h6>
+                  <li className="nav-item">
+                    <a
+                      className="nav-link last-child"
+                      href="tel:+4487788589(99)"
+                    >
+                      <h6> Call : +1 (902) 870-4398</h6>
                     </a>
                   </li>
                 </ul>
