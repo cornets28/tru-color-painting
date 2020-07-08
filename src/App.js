@@ -15,16 +15,10 @@ function App() {
   return (
     <React.Fragment>
       <Navbar />
-      <div className="container">
-        <div className="row">
-          <div className="col-6">Num 1</div>
-          <div className="col-6"><span><div className="i fas fa-home"></div></span></div>
-        </div>
-      </div>
       <Switch>
         <Route exact path="/" component={HouseList} />
         <Route path="/details" component={HouseDetails} />
-        <Route path="/aboutUs" component={AboutUs} />
+        <Route path="/about-us" component={AboutUs} />
         <Route component={PageNotFound} />
       </Switch>
 
