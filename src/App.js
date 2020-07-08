@@ -2,6 +2,7 @@ import React from "react";
 
 import { Switch, Route } from "react-router-dom";
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import Navbar from "./component/Navbar";
 import AboutUs from './component/AboutUs';
 import HouseList from "./component/HouseList";
@@ -17,7 +18,7 @@ function App() {
       <Switch>
         <Route exact path="/" component={HouseList} />
         <Route path="/details" component={HouseDetails} />
-        <Route path="/aboutUs" component={AboutUs} />
+        <Route path="/about-us" component={AboutUs} />
         <Route component={PageNotFound} />
       </Switch>
 
