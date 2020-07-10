@@ -34,7 +34,7 @@ function App() {
         <Route path="/about-us" component={AboutUs} />
         <Route component={PageNotFound} />
       </Switch>
-
+    
       <Footer />
     </React.Fragment>
   );

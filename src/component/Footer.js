@@ -5,6 +5,21 @@ export default class Footer extends Component {
   render() {
     return (
       <>
+        <section class="project-ask">
+          <div class="container">
+            <div class="pro-ask-content">
+              <h1 data-aos="slide-in-left">Do You Have Any Project?</h1>
+              <p>
+                Feel free to contact us at any time either by e-mail or by phone. We provide highest quality work at the best price. Our name says it all!
+              </p>
+              <div class="btn-contact" data-wow-delay=".5s">
+                <span class="con-btn">
+                  <a href="Contact-us.html">Let's Talk</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </section>
         <section className="footer-nav">
           <div className="container">
             <div className="row">
