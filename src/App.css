@@ -5,7 +5,9 @@
   --darkYellow: #d49836;
   --defaultWhite: #f3f3f3;
   --defaultDark: #000;
-  --darkOrange: #e46a29;
+  --darkOrange: #e46a29; 
+  --darkerOrange: #f06f14;
+  --transparentYellow: #ffe36855;
 }
 /* ---- Default styles ------*/
 html,
@@ -481,13 +483,217 @@ header.header-area {
 }
 /* --- End Header-area ---*/
 
-/* --- home ---*/
-.testhome {
-  width: 300px;
-  height: 200px;
+/* --- House List before and after --- */
+.completed-project{
+  text-align: center;
+  overflow: hidden;
   margin-top: 10%;
 }
-/* --- End home --- */
+.recent-top{
+  padding: 50px 0px;
+}
+/* .recent-painting {
+  color: var(--lightBleu);
+  font-weight: bold;
+} */
+.prj-6-content a {
+  font-family: 'Muli', sans-serif;
+  text-decoration: underline;
+  font-weight: 600;
+}
+.recent-project {
+  padding-bottom: 50px;
+}
+.recent-top h3{
+  padding: 12px 0px;
+  font-size: 28px;
+}
+.recent-top p:first-child {
+  font-family: 'Arvo', serif;
+}
+.recent-top p {
+  width: 50%;
+  margin: 0px auto;    
+  font-size: 17px;
+  color: var(--darkBleu);
+  font-weight: bold;
+}
+.project-1 {
+  position: relative;
+  overflow: hidden;    
+  margin: 15px auto;
+  padding-right: 3px;
+  width: 100%;
+  height: 80%;
+  object-fit: contain;  
+}
+.before {
+  position: absolute;
+  top: 8px;
+  right: 16px;
+}
+.after {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+}
+img { 
+  width:100%; 
+  height:100%; 
+}
+
+.project-1:hover .prj-1-content {
+    opacity: 1;
+    left: 20px;
+}
+.prj-1-content{
+    background: var(--transparentYellow);
+    text-align: center;
+    z-index: 1;
+    padding: 30px;
+    overflow: hidden;
+    position: absolute;
+    top: 20px;
+    left: -100%;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+    opacity: 0;
+    transition: .5s ease;
+}
+.project-1:hover .prj-four {
+    opacity: 1;
+    left: 0px;
+}
+
+.project-1:hover .prj-four {
+    opacity: 1;
+    left: 0px;
+}
+.project-1:hover .prj-five {
+    opacity: 1;
+    left: 0px;
+}
+.prj-two p{
+    font-weight: bold;
+    font-size: 22px !important;
+    line-height: 22px;
+    padding-bottom: 17px;
+}
+.prj-1-content p{
+    font-weight: bold;
+    font-size: 15px;
+    line-height: 22px;
+    padding-bottom: 17px;
+}
+.prj-1-content h4 {
+    font-weight: bold;
+    padding-top: 58%;
+    font-size: 30px;
+    line-height: 38px;
+    padding-bottom: 10px;
+}
+.prj-two h4 {
+    font-weight: bold;
+    padding-top: 3%;
+    font-size: 40px;
+    line-height: 50px;
+    padding-bottom: 10px;
+}
+
+.prj-1-content a{
+    font-family: 'Muli', sans-serif;
+    text-decoration: underline;
+    font-weight: 600;
+}
+.ficon-pj-1:before {
+    font-size: 485px;
+    position: absolute;
+    z-index: -1;
+    opacity: .1;
+    top: -11px;
+    left: -131px;
+    display: inline-block;
+    transform: rotate(41deg);
+}
+.ficon-pj-2::before{
+    font-size: 646px;
+    position: absolute;
+    z-index: -1;
+    opacity: .1;
+    top: -98px;
+    left: -131px;
+    display: inline-block;
+    transform: rotate(41deg);
+}
+.p-icon {
+    position: absolute;
+}
+/* ---End House List before and after --- */
+
+/* 2.8 Project-ask */
+.project-1 img {
+    width: 100%;
+}
+.project-ask{
+    background:url(/images/proj-ask.png);
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pro-ask-content h1{
+    font-weight: 600;
+}
+.pro-ask-content{
+    padding: 100px 0px;
+}
+.pro-ask-content p {
+    width: 66%;
+    padding-top: 10px;
+    margin: 0px auto;
+}
+.card.estimate-card.e-card-2 {
+    margin-top: -100px;
+}
+.btn-contact{
+    -webkit-mask: url(/images/brush-painting-stain.svg) no-repeat;
+    background-color: var(--lightYellow);
+    width: 200px;
+    margin: 0px auto;
+    transition: .5s ease;
+    padding: 50px 0px;
+    position: relative;
+}
+.btn-contact:hover a {
+    color: var(--defaultDark);
+}
+.btn-contact::after {
+    content: '';
+    height: 100%;
+    padding: 50px 0px;
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-color: var(--darkerOrange);
+    transition: .9s ease;
+}
+.btn-contact:hover:after{
+    width: 100%;
+}
+.con-btn {
+    position: absolute;
+    line-height: 90px;
+    font-size: 18px;
+    left: 0;
+    right: 20px;
+    top: 0;
+    z-index: 1;
+    font-weight: 600;
+}
+/* --- End Project-ask ----*/
 
 /* --- footer-nav --- */
 .subscribe-top {
@@ -516,11 +722,6 @@ header.header-area {
   top: 5px;
    margin-left: -11rem;
    font-weight: bold;
- 
-  /* background-color: rgb(153, 19, 19); */
-}
-.sp-input h4 {
- 
 }
 .sp-subscription-form .sp-input {
   position: relative;
@@ -616,4 +817,10 @@ ul.sicon-frist li:first-child {
 .bottom-footer-text {
   color: var(--defaultDark) !important;
 }
+input.form-control {
+    border-radius: 5px;
+    background: var(--darkYellow);
+    border: 1px solid var(--darkOrange);
+}
 /* End footer-nav */
+
