@@ -358,24 +358,20 @@ button.navbar-toggler.nav-icon {
 button.navbar-toggler.nav-icon::before {
   position: absolute;
   z-index: 999;
-  color: #090909;
+  color: var(--defaultDark);
   font-size: 30px;
   left: 17px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f00d";
 }
-
 .navbar-toggler:not(:disabled):not(.disabled) {
   cursor: pointer;
   background: var(--lightYellow);
-  /* #ffe268; */
 }
-
 .navbar-light .navbar-toggler {
   border: none;
 }
-
 button:focus {
   outline: inherit;
 }
