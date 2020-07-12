@@ -488,6 +488,7 @@ header.header-area {
   text-align: center;
   overflow: hidden;
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 .recent-top{
   padding: 50px 0px;
@@ -502,7 +503,10 @@ header.header-area {
   font-weight: 600;
 }
 .recent-project {
-  padding-bottom: 50px;
+  padding-bottom: 2rem;
+}
+.bottom-img {
+  margin-bottom: -4rem;
 }
 .recent-top h3{
   padding: 12px 0px;
@@ -630,7 +634,7 @@ img {
 }
 /* ---End House List before and after --- */
 
-/* 2.8 Project-ask */
+/* --- Project-ask --- */
 .project-1 img {
     width: 100%;
 }
