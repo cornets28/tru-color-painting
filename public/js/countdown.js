@@ -1,11 +1,5 @@
 /* eslint-disable no-undef */
 /* eslint-disable no-unused-expressions */
-/*!
- * The Final Countdown for jQuery v2.0.4 (http://hilios.github.io/jQuery.countdown/)
- * Copyright (c) 2014 Edson Hilios
- * 
- 
- */
 !(function (a) {
   "function" == typeof define && define.amd ? define(["jquery"], a) : a(jQuery);
 })(function (a) {

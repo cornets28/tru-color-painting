@@ -1,3 +1,5 @@
+/* eslint-disable no-unused-vars */
+/* eslint-disable no-undef */
 // -----------------------------
 
 /**=========== Hamburger Menu ========**/
@@ -51,9 +53,6 @@ $(window).on('scroll', function() {
 
 //**=================Dropdown=====================**//
 
-
-
-
 $(window).on('load', function() {
 
   if($(".navbar-nav li.nav-item ul li").has("ul").length) {
@@ -78,12 +77,7 @@ $('.navbar-nav>li.nav-item>a').on('click', function(){
   // $('.navbar-nav li .dropdown-menu').removeClass('shownav');
   
   $('.navbar-nav>li.nav-item>a').siblings('ul.dropdown-menu').removeClass('shownav');
- 
-
 })
-
-
-
 
 $('.navbar-nav li.nav-item ul li.dropdown-item').on('click', function(){
   // $('.navbar-nav>li.nav-item ul').removeClass('shownav');
@@ -93,11 +87,6 @@ $('.navbar-nav li.nav-item ul li.dropdown-item').on('click', function(){
  
 
 })
-
-
-
-
-
 
 // nav-item
  
