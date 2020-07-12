@@ -358,24 +358,20 @@ button.navbar-toggler.nav-icon {
 button.navbar-toggler.nav-icon::before {
   position: absolute;
   z-index: 999;
-  color: #090909;
+  color: var(--defaultDark);
   font-size: 30px;
   left: 17px;
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f00d";
 }
-
 .navbar-toggler:not(:disabled):not(.disabled) {
   cursor: pointer;
   background: var(--lightYellow);
-  /* #ffe268; */
 }
-
 .navbar-light .navbar-toggler {
   border: none;
 }
-
 button:focus {
   outline: inherit;
 }
@@ -488,6 +484,7 @@ header.header-area {
   text-align: center;
   overflow: hidden;
   margin-top: 10%;
+  margin-bottom: 10%;
 }
 .recent-top{
   padding: 50px 0px;
@@ -502,7 +499,10 @@ header.header-area {
   font-weight: 600;
 }
 .recent-project {
-  padding-bottom: 50px;
+  padding-bottom: 2rem;
+}
+.bottom-img {
+  margin-bottom: -4rem;
 }
 .recent-top h3{
   padding: 12px 0px;
@@ -630,7 +630,7 @@ img {
 }
 /* ---End House List before and after --- */
 
-/* 2.8 Project-ask */
+/* --- Project-ask --- */
 .project-1 img {
     width: 100%;
 }

@@ -5,15 +5,15 @@ export default class Footer extends Component {
   render() {
     return (
       <>
-        <section class="project-ask">
-          <div class="container">
-            <div class="pro-ask-content">
+        <section className="project-ask">
+          <div className="container">
+            <div className="pro-ask-content">
               <h1 data-aos="slide-in-left">Do You Have Any Project?</h1>
               <p>
                 Feel free to contact us at any time either by e-mail or by phone. We provide highest quality work at the best price. Our name says it all!
               </p>
-              <div class="btn-contact" data-wow-delay=".5s">
-                <span class="con-btn">
+              <div className="btn-contact" data-wow-delay=".5s">
+                <span className="con-btn">
                   <a href="Contact-us.html">Let's Talk</a>
                 </span>
               </div>
@@ -36,8 +36,8 @@ export default class Footer extends Component {
                           type="text"
                           className="form-control sp-in"
                           placeholder="Enter Your Email Address"
-                          onfocus="this.placeholder=''"
-                          onblur="this.placeholder='Enter Your Email Address'"
+                          // onFocus="this.placeholder=''"
+                          // onBlur="this.placeholder='Enter Your Email Address'"
                           aria-label="Recipient's username"
                           aria-describedby="basic-addon2"
                         />

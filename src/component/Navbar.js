@@ -14,7 +14,7 @@ export default class Navbar extends Component {
                 <img className="logo" src={Logo} alt="logo" />
               </Link>
 
-              {/* <button
+              <button
                 className="navbar-toggler"
                 type="button"
                 data-toggle="collapse"
@@ -24,11 +24,16 @@ export default class Navbar extends Component {
                 aria-label="Toggle navigation"
               >
                 <span className="navbar-toggler-icon"></span>
-              </button> */}
+              </button>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav hp-1-nav mt-2">
-                  <li className="nav-item">
-                    <Link className="nav-link" to="/">
+                    <li className="nav-item dropdown">
+                    <Link
+                      className="nav-link"
+                      id="dropdown1"
+                      data-toggle=""
+                      to="/"
+                    >
                       <h6>Home</h6>
                     </Link>
                   </li>
