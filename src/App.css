@@ -125,7 +125,7 @@ h6 {
   letter-spacing: 0px;
 }
 a {
-  color: #060707;
+  color: var(--defaultDark);
 }
 h1 a,
 h2 a,
@@ -432,7 +432,7 @@ button:focus {
   padding-left: 40px;
 }
 .paint-nav .navbar-light .navbar-nav .nav-link:hover {
-  color: #000;
+  color: var(--defaultDark);
   text-decoration: underline;
   transition: 0.5s ease;
   font-weight: 600;
@@ -749,7 +749,7 @@ img {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    border: 1px solid #ccc;
+    border: 1px solid var(--defaultWhite);
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     opacity: 1;
@@ -779,14 +779,14 @@ img {
     font-size: 24px !important;
     border: 1px solid;
     padding: 0px 8px;
-    color: #000000 !important;
+    color: var(--defaultDark) !important;
 }
 .btn-next{
     font-size: 24px !important;
     border: 1px solid;
     margin-left: 13px;
     padding: 0px 8px;
-    color: #000000 !important;
+    color: var(--defaultDark) !important;
 }
 .testimo-slide p{
     font-size: 22px;
@@ -859,11 +859,10 @@ section.wepaint-thecolor {
     width: 100%;
 }
 .btn-learn:hover a{
-    color: #060707;
+    color: var(--defaultDark);
 }
 .learn-ab {
     position: absolute;
-    
     line-height: 90px;
     font-size: 18px;
     left: 47px;
@@ -873,6 +872,64 @@ section.wepaint-thecolor {
     font-weight: 600;
 }
 /* --- end we paint color --- */
+
+/* 7.2 Our-Experience */
+.our-experience{
+    padding: 100px 0px;
+    background-image: url(/images/our-eperience.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+}
+.o-e-content p:first-child {
+    padding-bottom: 1px;
+    font-size: 18px;
+}
+.o-e-content h1 {
+    width: 80%;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+.o-e-content p {
+    width: 80%;
+    font-size: 16px;
+}
+.expart-icon{
+    height: 70px;
+    width: 20%;
+    float: left;
+    font-size: 40px;
+    padding-left: 1rem;
+    color: var(--darkOrange);
+    background-color: var(--lightYellow);
+}
+.expart {
+    padding-top: 10px;
+    margin: 15px auto;
+}
+.expart-content {
+    padding-left: 20px;
+    width: 80%;
+    display: inline-block;
+}
+.expart-content p {
+    line-height: 17px;
+}
+.expart-content h4 {
+    padding: 15px 0px;
+}
+.ex-1::before {
+    font-size: 40px;
+    position: absolute;
+    overflow: hidden;
+    left: 10px;
+    top: 40px;
+    display: inline;
+    color: var(--defaultDark);
+}
+
+/* End Our-Experience */
 
 /* --- footer-nav --- */
 .subscribe-top {
