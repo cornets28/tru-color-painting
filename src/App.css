@@ -506,7 +506,7 @@ header.header-area {
   font-size: 28px;
 }
 .recent-top p:first-child {
-  font-family: 'Arvo', serif;
+  
 }
 .recent-top p {
   width: 50%;
@@ -722,7 +722,7 @@ img {
     width: 100%;
 }
 .client-content p:first-child {
-    font-family: 'Arvo', serif;
+    
 }
 .client-content p:last-child {
     font-family: 'Muli', sans-serif;
@@ -806,7 +806,73 @@ img {
   position: absolute;
 }
 
-/* End Client Feedback */
+/* --- End Client Feedback --- */
+
+/* --- we paint color --- */
+.colo-content {
+    padding-top: 30px;
+}
+.colo-content p:first-child {
+    padding-bottom: 15px;
+    
+}
+.colo-content p {
+    width: 80%;
+    padding-bottom: 15px;
+    font-size: 18px;
+}
+.colo-content h2 {
+    width: 80%;
+    font-weight: bold;
+    padding-bottom: 15px;
+}
+.color-image img {
+    max-width: 105%;
+}
+section.wepaint-thecolor {
+    overflow: hidden;
+}
+.btn-learn{
+    -webkit-mask: url(/images/rush-painting-stain.svg) no-repeat;
+    background-color: var(--lightYellow);
+    width: 200px;
+    transition: .5s ease;
+    padding: 50px 0px;
+    overflow: hidden;
+    left: -17px;
+    position: relative;
+   
+}
+.btn-learn::after {
+    position: absolute;
+    content: '';
+    height: 100%;
+    padding: 50px 0px;
+    width: 0;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-color: var(--darkerOrange);
+    transition: .9s ease;
+}
+.btn-learn:hover::after{
+    width: 100%;
+}
+.btn-learn:hover a{
+    color: #060707;
+}
+.learn-ab {
+    position: absolute;
+    
+    line-height: 90px;
+    font-size: 18px;
+    left: 47px;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    font-weight: 600;
+}
+/* --- end we paint color --- */
 
 /* --- footer-nav --- */
 .subscribe-top {
