@@ -60,7 +60,7 @@ export default class AboutUs extends Component {
                         
                       </div>
 
-                      <div class="testimonial-nav prev-next">
+                      <div class="testimonial-nav">
                         <a
                           data-slide="prev"
                           href="#quote-carousel"
