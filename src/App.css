@@ -802,7 +802,8 @@ img {
     right: 0;
 }
 .carousel-inner {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
+  position: absolute;
 }
 
 /* End Client Feedback */
