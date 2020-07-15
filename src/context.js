@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
-import { paintingHouses } from './data';
+import { paintingHouses, carouselPhotos } from './data';
 
 const PaintingContext = React.createContext()
 
 class PaintingProvider extends Component {
   state = {
-    paintings: paintingHouses
+    paintings: paintingHouses,
+    carouselPics: carouselPhotos,
   };
   render() {
     return (
-      <PaintingContext.Provider value={{...this.state}}>
+      <PaintingContext.Provider value={{ ...this.state }}>
         {this.props.children}
       </PaintingContext.Provider>
     );
