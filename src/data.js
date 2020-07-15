@@ -45,7 +45,7 @@ export const paintingHouses = [
   },
 ];
 
-export const carousel = [
+export const carouselPhotos = [
   {
     id: 1,
     imgCarousel: "images/house-1.jpg",
