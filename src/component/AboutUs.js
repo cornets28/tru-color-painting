@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from 'react-router-dom'
 import { PaintingConsumer } from "../context";
 import Carousel from "./Carousel";
 import { carouselPhotos } from "../data";
@@ -10,32 +11,32 @@ export default class AboutUs extends Component {
   render() {
     return (
       <React.Fragment>
-        <section class="client-feedback">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-5">
-                <div class="client-image wow fadeInLeft" data-wow-delay=".5s">
+        <section className="client-feedback">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-5">
+                <div className="client-image wow fadeInLeft" data-wow-delay=".5s">
                   <img src="/images/client.png" alt="" />
                 </div>
               </div>
-              <div class="col-md-7">
-                <div class="client-content">
+              <div className="col-md-7">
+                <div className="client-content">
                   <p>We Love What We Do</p>
                   <h3 data-aos="zoom-in">We Can Paint You Dream House</h3>
                   <p>
                     Fall In Love With Your House By Choosing Us. Highest quality
                     painting and most professional services.
                   </p>
-                  <div class="testimo-slide">
+                  <div className="testimo-slide">
                     <div
-                      class="carousel slide"
+                      className="carousel slide"
                       data-ride="carousel"
                       id="quote-carousel"
                     >
-                      <div class="carousel-inner">
-                        <div class="item active carousel-item">
-                          <div class="row">
-                            <div class="col-md-12">
+                      <div className="carousel-inner">
+                        <div className="item active carousel-item">
+                          <div className="row">
+                            <div className="col-md-12">
                               <img
                                 src="/images/house-1.jpg"
                                 alt="CarouselImage"
@@ -44,40 +45,66 @@ export default class AboutUs extends Component {
                           </div>
                         </div>
 
-                        
-                          <PaintingConsumer>
-                            {(value) => {
-                              return value.carouselPics.map((carousPhoto) => {
-                                return (
-                                  <Carousel
-                                    key={carousPhoto.id}
-                                    carousPhoto={carousPhoto}
-                                  />
-                                );
-                              });
-                            }}
-                          </PaintingConsumer>
-                        
+                        <PaintingConsumer>
+                          {(value) => {
+                            return value.carouselPics.map((carousPhoto) => {
+                              return (
+                                <Carousel
+                                  key={carousPhoto.id}
+                                  carousPhoto={carousPhoto}
+                                />
+                              );
+                            });
+                          }}
+                        </PaintingConsumer>
                       </div>
 
-                      <div class="testimonial-nav">
+                      <div className="testimonial-nav">
                         <a
                           data-slide="prev"
                           href="#quote-carousel"
-                          class="left carousel-control btn-prev"
+                          className="left carousel-control btn-prev"
                         >
-                          <i class="fa fa-chevron-left"></i>
+                          <i className="fa fa-chevron-left"></i>
                         </a>
                         <a
                           data-slide="next"
                           href="#quote-carousel"
-                          class="right carousel-control btn-next"
+                          className="right carousel-control btn-next"
                         >
-                          <i class="fa fa-chevron-right"></i>
+                          <i className="fa fa-chevron-right"></i>
                         </a>
                       </div>
                     </div>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="wepaint-thecolor">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="colo-content">
+                  <h2>We Offer A Huge Variety Of Colors!</h2>
+                  <p>
+                   Tru Color Painting is painting company located in Canada. Notably, in Antigonish at Scotia Nova. We work for all companies or individuals as long as they are located in Canada.
+                  </p>
+                  <p>
+                   We have been performing in the painting for more than three years and have always meeting our customer expectations, needs, and satisfactions. At Tru Color Painting, We love what we.
+                  </p>
+                  <div className="btn-learn">
+                    <span className="learn-ab">
+                      <Link to="/"> See Our Works</Link>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="color-image wow zoomIn" data-wow-delay=".3s">
+                  <img src="images/color.png" alt="" />
                 </div>
               </div>
             </div>
