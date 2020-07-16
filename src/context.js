@@ -1,12 +1,13 @@
-import React, { Component } from 'react';
-import { paintingHouses, carouselPhotos } from './data';
+import React, { Component } from "react";
+import { paintingHouses, carouselPhotos, team } from "./data";
 
-const PaintingContext = React.createContext()
+const PaintingContext = React.createContext();
 
 class PaintingProvider extends Component {
   state = {
     paintings: paintingHouses,
     carouselPics: carouselPhotos,
+    teamMembers: team,
   };
   render() {
     return (
@@ -18,4 +19,4 @@ class PaintingProvider extends Component {
 }
 const PaintingConsumer = PaintingContext.Consumer;
 
-export { PaintingProvider, PaintingConsumer};
+export { PaintingProvider, PaintingConsumer };
