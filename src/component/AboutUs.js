@@ -2,11 +2,12 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { PaintingConsumer } from "../context";
 import Carousel from "./Carousel";
-import { carouselPhotos } from "../data";
+import { carouselPhotos, team } from "../data";
+import TeamMember from "./TeamMember";
 
 export default class AboutUs extends Component {
   state = {
-    carouselPics: carouselPhotos,
+    teamMembers: team,
   };
   render() {
     return (
@@ -130,8 +131,8 @@ export default class AboutUs extends Component {
                   <p>
                     We save you a lot of time. You would not have to keep your
                     house disorganized and messed up with painting materials for
-                    weeks. We ensure the timely completion of
-                    your painting project.
+                    weeks. We ensure the timely completion of your painting
+                    project.
                   </p>
                 </div>
                 <div className="row">
@@ -139,7 +140,7 @@ export default class AboutUs extends Component {
                     <div className="expart">
                       <div className="expart-icon">
                         <span className="flaticon-paint ex-1">
-                          <i class="fad fa-fill-drip"></i>
+                          <i className="fad fa-fill-drip"></i>
                         </span>
                       </div>
                       <div className="expart-content">
@@ -157,7 +158,7 @@ export default class AboutUs extends Component {
                     <div className="expart">
                       <div className="expart-icon">
                         <span className="flaticon-paint-1 ex-1">
-                          <i class="far fa-paint-roller"></i>
+                          <i className="far fa-paint-roller"></i>
                         </span>
                       </div>
                       <div className="expart-content">
@@ -174,7 +175,7 @@ export default class AboutUs extends Component {
                     <div className="expart">
                       <div className="expart-icon">
                         <span className="flaticon-graphic-tool ex-1">
-                          <i class="fad fa-paint-brush"></i>
+                          <i className="fad fa-paint-brush"></i>
                         </span>
                       </div>
                       <div className="expart-content">
@@ -191,7 +192,7 @@ export default class AboutUs extends Component {
                     <div className="expart">
                       <div className="expart-icon">
                         <span className="flaticon-pantone ex-1">
-                          <i class="fad fa-brush"></i>
+                          <i className="fad fa-brush"></i>
                         </span>
                       </div>
                       <div className="expart-content">
@@ -209,7 +210,36 @@ export default class AboutUs extends Component {
             </div>
           </div>
         </section>
+
+        <section className="our-team">
+          <div className="container">
+            <div className="os-content">
+              <p>Our Team</p>
+              <h2>Meet The Team</h2>
+              <p>
+                Whereas digital stuff is a bit more ethereal. I like the trophy
+                on my shelf, the presence in my home nice book is just as
+                valuable..
+              </p>
+            </div>
+            <div className="row">
+              <PaintingConsumer>
+                {(value) => {
+                  return value.teamMembers.map((member) => {
+                    return (
+                      <TeamMember
+                        key={member.id}
+                        member={member}
+                      />
+                    );
+                  });
+                }}
+              </PaintingConsumer>
+            </div>
+          </div>
+        </section>
       </React.Fragment>
     );
   }
 }
+
