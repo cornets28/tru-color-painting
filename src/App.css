@@ -931,6 +931,88 @@ section.wepaint-thecolor {
 
 /* End Our-Experience */
 
+/* --- Our Team ---*/
+section.our-team {
+    padding: 0px 0px 100px;
+    overflow: hidden;
+}
+.ot-2 {
+    padding: 50px 0px 0px !important;
+}
+.st-member {
+    margin: 15px auto;
+    position: relative;
+    top: 30px;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    margin-bottom: 51px;
+    border-bottom-right-radius: 33%;
+    border-top-left-radius: 33%;
+}
+.st-member img {
+    width: 100%;
+    height: 100%;
+    border-bottom-right-radius: 33%;
+    border-top-left-radius: 33%;
+}
+.st-member:hover::before{
+    height: 100%;
+    top: 0;
+}
+.st-member:hover .st-s-icon{
+    opacity: 1;
+}
+.st-member::before{
+    position: absolute;
+    content: '';
+    width:100%;
+    height: 0%;
+    transition: .5s ease;
+    z-index: 1;
+    left:0;
+    top: 50%;
+    right: 0;
+    border-bottom-right-radius: 33%;
+    border-top-left-radius: 33%;
+    background: rgba(0, 0, 0, 0.4);
+}
+.st-member p {
+    font-family: 'Muli', sans-serif;
+    font-weight: 600;
+}
+.st-s-icon ul li {
+    display: inline-block;
+    list-style: none;
+}
+.st-s-icon {
+    position: absolute;
+    top: 43%;
+    z-index: 1;
+    opacity: 0;
+    transition: .5s ease-in;
+    transition: .2s ease-out;
+    left: 14%;
+}
+.os-content h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px 0px;
+}
+.os-content p:first-child {
+    text-align: center;
+}
+.os-content p{
+    width: 56%;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 19px;
+    margin: 0 auto;
+}
+.fullname {
+  font-weight: bold;
+}
+/* --- End Our team--- */
 /* --- footer-nav --- */
 .subscribe-top {
   position: relative;
