@@ -80,7 +80,7 @@ export default class PaintingForm extends Component {
                         <label>Image After</label>
                         <ImageUploader
                           withIcon={true}
-                          buttonText="Choose 1st Image"
+                          buttonText="Choose 2nd Image"
                           name="imgAfter"
                           value={imgAfter}
                           onChange={this.onDropImageTwo}
@@ -102,7 +102,7 @@ export default class PaintingForm extends Component {
                         <input
                           type="text"
                           className="form-control"
-                          placeholder="Insert Image"
+                          placeholder="Add A Short Description"
                           name="description"
                           value={description}
                           onChange={(e) => this.handleInputChange(e)}
