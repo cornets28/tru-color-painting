@@ -1,7 +1,38 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+import ImageUploader from "react-images-upload";
 
 export default class PaintingForm extends Component {
+  state = {
+    imgBefore: [],
+    imgAfter: [],
+    description: "",
+  };
+
+  onDropImageOne = (picture) => {
+    this.setState({
+      imgBefore: this.state.imgBefore.concat(picture),
+    });
+  };
+
+   onDropImageTwo = (picture) => {
+    this.setState({
+      imgAfter: this.state.imgAfter.concat(picture),
+    });
+  };
+
+  handleInputChange = (e) => {
+    this.setState({
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  onSubmit = (e) => {
+    e.preventDefault();
+    const data = this.state;
+    console.log(data);
+  };
   render() {
+    const { imgBefore, imgAfter, description } = this.state;
     return (
       <div
         className="modal animated fadeIn"
@@ -10,10 +41,7 @@ export default class PaintingForm extends Component {
         role="dialog"
         aria-hidden="true"
       >
-        <div
-          className="modal-dialog modal-dialog-centered"
-          role="document"
-        >
+        <div className="modal-dialog modal-dialog-centered" role="document">
           <div className="modal-content e-m-contents">
             <div className="modal-body">
               <button
@@ -31,23 +59,39 @@ export default class PaintingForm extends Component {
                   <form>
                     <div className="form-row pt-2">
                       <div className="col form-group">
-                        <label>Image Before </label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="Before"
-                          id="wd-height"
-                          required
+                        <label>Image Before</label>
+                        <ImageUploader
+                          withIcon={true}
+                          buttonText="Choose 1st Image"
+                          name="imgBefore"
+                          value={imgBefore}
+                          onChange={this.onDropImageOne}
+                          imgExtension={[
+                            ".jpg",
+                            "jpeg",
+                            ".gif",
+                            ".png",
+                            ".gif",
+                          ]}
+                          maxFileSize={5242880}
                         />
                       </div>
                       <div className="col form-group">
                         <label>Image After</label>
-                        <input
-                          type="text"
-                          className="form-control"
-                          placeholder="After"
-                          id="wd-width"
-                          required
+                        <ImageUploader
+                          withIcon={true}
+                          buttonText="Choose 1st Image"
+                          name="imgAfter"
+                          value={imgAfter}
+                          onChange={this.onDropImageTwo}
+                          imgExtension={[
+                            ".jpg",
+                            "jpeg",
+                            ".gif",
+                            ".png",
+                            ".gif",
+                          ]}
+                          maxFileSize={5242880}
                         />
                       </div>
                     </div>
@@ -59,7 +103,10 @@ export default class PaintingForm extends Component {
                           type="text"
                           className="form-control"
                           placeholder="Insert Image"
-                          id="wnd-height"
+                          name="description"
+                          value={description}
+                          onChange={(e) => this.handleInputChange(e)}
+                          // id="wnd-height"
                         />
                       </div>
                     </div>
@@ -69,6 +116,7 @@ export default class PaintingForm extends Component {
                         type="button"
                         className="btn-block ebtn"
                         id="estimate-btn"
+                        onClick={(e) => this.onSubmit(e)}
                       >
                         Insert Images
                       </button>
