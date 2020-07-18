@@ -1,10 +1,14 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import { Link } from 'react-router-dom';
+import PaintingForm from './PaintingForm';
 
 export default class Footer extends Component {
   render() {
     return (
       <>
+      <section>
+        <PaintingForm />
+      </section>
         <section className="project-ask">
           <div className="container">
             <div className="pro-ask-content">

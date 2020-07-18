@@ -27,7 +27,7 @@ export default class Navbar extends Component {
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
                 <ul className="navbar-nav hp-1-nav mt-2">
-                    <li className="nav-item dropdown">
+                  <li className="nav-item dropdown">
                     <Link
                       className="nav-link"
                       id="dropdown1"
@@ -51,14 +51,14 @@ export default class Navbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <Link
+                    <div
                       className="nav-link mest"
                       data-toggle="modal"
-                      data-target=""
-                      to="/"
+                      data-target="#exampleModalCenter"
+                      // to="/"
                     >
-                      <h6>Estimate</h6>
-                    </Link>
+                      <h6>Add Image</h6>
+                    </div>
                   </li>
                   <li className="nav-item">
                     <a

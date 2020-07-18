@@ -477,6 +477,11 @@ header.header-area {
   margin-left: 7%;
   position: absolute;
 }
+.modal-content.e-m-contents {
+    margin: 0px auto;
+    margin-top: -13%;
+    max-width: 510px;
+}
 /* --- End Header-area ---*/
 
 /* --- House List before and after --- */
@@ -651,9 +656,17 @@ img {
     padding-top: 10px;
     margin: 0px auto;
 }
-.card.estimate-card.e-card-2 {
+/* .card.estimate-card.e-card-2 {
     margin-top: -100px;
+} */
+.card.estimate-card.es-card-2 {
+    margin-top: -37px;
+    margin: 0px auto;
+    position: relative;
+    z-index: 1;
+    max-width: 505px;
 }
+
 .btn-contact{
     -webkit-mask: url(/images/brush-painting-stain.svg) no-repeat;
     background-color: var(--lightYellow);
@@ -1013,6 +1026,112 @@ section.our-team {
   font-weight: bold;
 }
 /* --- End Our team--- */
+
+
+/* --- Painting form --- */
+.modal-dialog {
+    padding-top: 10%;
+    max-width: 750px;
+}
+.modal-body {
+    position: relative;
+    padding: 0px!important;
+}
+.modal-content{
+    background: transparent!important;
+    border: none;
+}
+.es-close {
+    position: absolute;
+    right: 6px;
+    top: -5px;
+    color: var(--defaultWhite)!important;
+    opacity: 1;
+    z-index: 999;
+    font-size: 40px!important;
+    font-weight: 600;
+}
+.close:not(:disabled):not(.disabled):focus, .close:not(:disabled):not(.disabled):hover{
+    color: var(--darkOrange)!important;
+    opacity: 1;
+}
+
+.card.estimate-card {
+    margin-top: 35%;
+    color: var(--defaultWhite);
+    padding: 15px;
+    margin-bottom: 58px;
+    font-size: 12px;
+    z-index: 1;
+    overflow: hidden;
+    position: relative;
+    background-color: #1d252dd5;
+}
+.estimate-card h2{
+    padding: 20px 0px 5px;
+    color: var(--defaultWhite);
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+}
+.esc-paint::before{
+    position: absolute;
+    font-size: 700px;
+    color: #252e36;
+    top: -16%;
+    left: -10%;
+    z-index: -1;
+}
+span.e-ctl {
+    font-size: 14px;
+}
+.estimate-card input.form-control {
+    border-radius: inherit;
+    background: #1d252d36;
+    color: var(--darkOrange);
+}
+.estimate-card input.form-control:focus{
+    outline-style:none;
+    box-shadow:none;
+    color: var(--defaultWhite);
+    border-color: var(--darkYellow);
+}
+.estimate-card input.form-control::placeholder{
+    color: #737a80 !important;
+}
+.estimate-card label input[type=radio]{
+    transform:scale(1.5);
+    margin-left: 20px;
+}
+.estimate-card label:first-child input[type=radio] {
+    margin-left: 0px;
+}
+
+button.btn-block.ebtn {
+    padding: 15px 0px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--lightYellow);
+    cursor: pointer;
+}
+button.btn-block.ebtn-r {
+    padding: 15px 0px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--darkOrange);
+    cursor: pointer;
+}
+.estimate-card label{
+    transform:scale(1.5);
+    margin-left: 20px;
+}
+.estimate-card label:first-child  {
+    margin-left: 12px;
+}
+/* --- end Painting form --- */
+
 /* --- footer-nav --- */
 .subscribe-top {
   position: relative;
