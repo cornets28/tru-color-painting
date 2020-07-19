@@ -2,13 +2,13 @@ import React, { Component } from "react";
 
 export default class House extends Component {
   render() {
-    const { id, imgBefore, imgAfter, description } = this.props.painting;
+    const { id, imgBefore, imgAfter, description } = this.props.painting.fields;
     return (
       <div className="recent-project">
         <div className="row">
           <div className="col-md-6 bottom-img">
             <div className="project-1">
-              <img src={imgBefore} alt="After Painting" />
+              <img src={imgBefore.fields.file.url} alt="After Painting" />
               <h4 className="after">Before</h4>
               <div className="prj-1-content prj-two">
                 <div className="p-icon">
@@ -21,7 +21,7 @@ export default class House extends Component {
           </div>
           <div className="col-md-6 bottom-img">
             <div className="project-1">
-              <img src={imgAfter} alt="After Painting" />
+              <img src={imgAfter.fields.file.url} alt="After Painting" />
               <h4 className="after">After</h4>
               <div className="prj-1-content prj-two">
                 <div className="p-icon">
