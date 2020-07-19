@@ -24,7 +24,7 @@ export default class HouseList extends Component {
             <PaintingConsumer>
               {(value) => {
                 return value.paintings.map((painting) => {
-                  return <House key={painting.id} painting={painting} />;
+                  return <House key={painting.sys.id} painting={painting} />;
                 });
               }}
             </PaintingConsumer>

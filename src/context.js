@@ -1,14 +1,27 @@
 import React, { Component } from "react";
-import { paintingHouses, carouselPhotos, team } from "./data";
+import { carouselPhotos, team } from "./data";
+import {client} from './client';
 
 const PaintingContext = React.createContext();
 
 class PaintingProvider extends Component {
   state = {
-    paintings: paintingHouses,
+    paintings: [],
     carouselPics: carouselPhotos,
     teamMembers: team,
   };
+
+  componentDidMount() {
+    client.getEntries()
+      .then((response) => {
+        console.log(response)
+        this.setState({
+          paintings: response.items
+        })
+      })
+      .catch(console.error())
+  }
+
   render() {
     return (
       <PaintingContext.Provider value={{ ...this.state }}>
