@@ -6,9 +6,9 @@ export default class Footer extends Component {
   render() {
     return (
       <>
-      <section>
+      {/* <section>
         <PaintingForm />
-      </section>
+      </section> */}
         <section className="project-ask">
           <div className="container">
             <div className="pro-ask-content">
