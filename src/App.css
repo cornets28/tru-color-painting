@@ -1115,6 +1115,15 @@ button.btn-block.ebtn {
     background-color: var(--lightYellow);
     cursor: pointer;
 }
+button.btn-block.upload {
+    padding: 15px 0px;
+    border: none;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--darkOrange);
+    cursor: pointer;
+}
+
 button.btn-block.ebtn-r {
     padding: 15px 0px;
     border: none;
