@@ -1,23 +1,16 @@
+/* eslint-disable no-undef */
 import React, { Component } from "react";
-import ImageUploader from "react-images-upload";
+import Axios from "axios";
+import fire from "../Fire";
+
 
 export default class PaintingForm extends Component {
   state = {
-    imgBefore: [],
-    imgAfter: [],
+    imgBefore: "",
+    imgAfter: "",
     description: "",
-  };
-
-  onDropImageOne = (picture) => {
-    this.setState({
-      imgBefore: this.state.imgBefore.concat(picture),
-    });
-  };
-
-   onDropImageTwo = (picture) => {
-    this.setState({
-      imgAfter: this.state.imgAfter.concat(picture),
-    });
+    url: "",
+    progress: 0
   };
 
   handleInputChange = (e) => {
@@ -26,10 +19,82 @@ export default class PaintingForm extends Component {
     });
   };
 
+  fileSelectedBeforeHandler = (e) => {
+    if (e.target.files[0]) {
+       this.setState({
+         imgBefore: e.target.files[0],
+       });
+    }
+  };
+
+  fileSelectedAfterHandler = (e) => {
+    this.setState({
+      imgBefore: e.target.files[0],
+    });
+  };
+
+  fileUploadOneHandler = () => {
+    // const formData = new FormData();
+    // formdata.append("image", this.state.imgBefore, this.state.imgBefore.name);
+    // this.props.uploadImage(formData);
+    // Axios.post("tru-color-painting.appspot.com/", formdata).then((res) => {
+    //   console.log(res);
+    // });
+
+    // let bucketName = 'images'
+    // let storageRef = firebase.storage().ref(`${bucketName}/${imgBefore.name}`);
+    // let uploadTask = storageRef.put(imgBefore);
+    // uplaodTask.on(firebase.storage.TaskEvent.STATE_CHANGED,
+    //   () => {
+    //     let downloadURL = uploadTask.snapshot.downloadURL
+    //   })
+    const { imgBefore } = this.state;
+    const uploadTask = storage.ref(`images/${imgBefore.name}`).put(imgBefore);
+     uploadTask.on(
+      "state_changed",
+      snapshot => {
+        // progress function ...
+        const progress = Math.round(
+          (snapshot.bytesTransferred / snapshot.totalBytes) * 100
+        );
+        this.setState({ progress });
+      },
+      error => {
+        // Error function ...
+        console.log(error);
+      },
+      () => {
+        // complete function ...
+        storage
+          .ref("images")
+          .child(imgBefore.name)
+          .getDownloadURL()
+          .then(url => {
+            this.setState({ url });
+            console.log(url)
+          });
+      }
+    );
+  };
+
+  // fileUploadOTwoHandler = () => {
+  //   const formdata = new FormData();
+  //   formdata.append("image", this.state.imgAfter, this.state.imgAfter.name);
+  //   Axios.post("TODO: copy the link from firebase", formdata).then((res) => {
+  //     console.log(res);
+  //   });
+  // };
+
   onSubmit = (e) => {
     e.preventDefault();
     const data = this.state;
-    console.log(data);
+
+    fire.database().ref("paintingHouses").push(data);
+    this.setState({
+      imgBefore: "",
+      imgAfter: "",
+      description: ""
+    });
   };
   render() {
     const { imgBefore, imgAfter, description } = this.state;
@@ -59,40 +124,66 @@ export default class PaintingForm extends Component {
                   <form>
                     <div className="form-row pt-2">
                       <div className="col form-group">
-                        <label>Image Before</label>
-                        <ImageUploader
-                          withIcon={true}
-                          buttonText="Choose 1st Image"
+                        <label>Image Before </label>
+                        <input
+                          style={{ display: "none" }}
+                          ref={(fileInput) => (this.fileInput = fileInput)}
+                          type="file"
+                          className="form-control"
+                          placeholder="Before"
+                          id="imageInput"
                           name="imgBefore"
                           value={imgBefore}
-                          onChange={this.onDropImageOne}
-                          imgExtension={[
-                            ".jpg",
-                            "jpeg",
-                            ".gif",
-                            ".png",
-                            ".gif",
-                          ]}
-                          maxFileSize={5242880}
+                          onChange={(e) => this.fileSelectedBeforeHandler(e)}
+                          // id="wd-height"
+                          required
                         />
+                        <button
+                          type="button"
+                          className="btn-block ebtn"
+                          onClick={() => this.fileInput.click()}
+                        >
+                          Pick 1st Image
+                        </button>
+                        <button
+                          type="button"
+                          className="btn-block upload"
+                          onClick={this.fileUploadOneHandler}
+                        >
+                          {" "}
+                          Upload 1st Image
+                        </button>
                       </div>
                       <div className="col form-group">
                         <label>Image After</label>
-                        <ImageUploader
-                          withIcon={true}
-                          buttonText="Choose 2nd Image"
+                        <input
+                          type="file"
+                          ref={(fileInputTwo) =>
+                            (this.fileInputTwo = fileInputTwo)
+                          }
+                          style={{ display: "none" }}
+                          className="form-control"
+                          placeholder="After"
                           name="imgAfter"
                           value={imgAfter}
-                          onChange={this.onDropImageTwo}
-                          imgExtension={[
-                            ".jpg",
-                            "jpeg",
-                            ".gif",
-                            ".png",
-                            ".gif",
-                          ]}
-                          maxFileSize={5242880}
+                          onChange={(e) => this.fileSelectedAfterHandler(e)}
+                          required
                         />
+                        {/* <button
+                          type="button"
+                          className="btn-block ebtn"
+                          onClick={() => this.fileInputTwo.click()}
+                        >
+                          Pick 2nd Image
+                        </button>
+                        <button
+                          type="button"
+                          className="btn-block upload"
+                          onClick={this.fileUploadTwoHandler}
+                        >
+                          {" "}
+                          Upload 2nd Image
+                        </button> */}
                       </div>
                     </div>
 
@@ -102,11 +193,10 @@ export default class PaintingForm extends Component {
                         <input
                           type="text"
                           className="form-control"
-                          placeholder="Add A Short Description"
+                          placeholder="Short Description"
                           name="description"
                           value={description}
                           onChange={(e) => this.handleInputChange(e)}
-                          // id="wnd-height"
                         />
                       </div>
                     </div>
