@@ -15,7 +15,7 @@ import "./SmallScreen.css";
 function App() {
   return (
     <React.Fragment>
-      {/* <div class="preloader">
+      <div class="preloader">
         <div class="p-wrapper">
           <div class="spinner">
             <i></i>
@@ -27,7 +27,7 @@ function App() {
             <i></i>
           </div>
         </div>
-      </div> */}
+      </div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={HouseList} />
