@@ -26,7 +26,7 @@ export default class Navbar extends Component {
                 <span className="navbar-toggler-icon"></span>
               </button>
               <div className="collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav hp-1-nav mt-2">
+                <ul className="navbar-nav hp-1-nav ml-auto mt-2">
                   <li className="nav-item dropdown">
                     <Link
                       className="nav-link"
