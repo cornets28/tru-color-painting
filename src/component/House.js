@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 export default class House extends Component {
   render() {
+    // eslint-disable-next-line no-unused-vars
     const { id, imgBefore, imgAfter, description } = this.props.painting.fields;
     return (
       <div className="recent-project">
