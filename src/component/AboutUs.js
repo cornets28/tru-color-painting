@@ -6,9 +6,6 @@ import Carousel from "./Carousel";
 import TeamMember from "./TeamMember";
 
 export default class AboutUs extends Component {
-  // state = {
-  //   teamMembers: team,
-  // };
   render() {
     return (
       <React.Fragment>
@@ -25,7 +22,6 @@ export default class AboutUs extends Component {
               </div>
               <div className="col-md-7">
                 <div className="client-content">
-                  <p>We Love What We Do</p>
                   <h3 data-aos="zoom-in">We Can Paint You Dream House</h3>
                   <p>
                     Fall In Love With Your House By Choosing Us. Highest quality
