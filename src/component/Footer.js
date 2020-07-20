@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import PaintingForm from './PaintingForm';
+// import PaintingForm from './PaintingForm';
 
 export default class Footer extends Component {
   render() {
