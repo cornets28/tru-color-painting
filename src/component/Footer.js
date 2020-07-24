@@ -1,14 +1,14 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import PaintingForm from './PaintingForm';
+import PaintingForm from './PaintingForm';
 
 export default class Footer extends Component {
   render() {
     return (
       <>
-      {/* <section>
+      <section>
         <PaintingForm />
-      </section> */}
+      </section>
         <section className="project-ask">
           <div className="container">
             <div className="pro-ask-content">
