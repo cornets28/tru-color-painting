@@ -1,7 +1,7 @@
 // /* eslint-disable no-undef */
 // import React, { Component } from "react";
 // import Axios from "axios";
-// import fire from "../Fire";
+// // import fire from "../Fire";
 
 
 // export default class PaintingForm extends Component {

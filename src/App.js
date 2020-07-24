@@ -15,9 +15,9 @@ import "./SmallScreen.css";
 function App() {
   return (
     <React.Fragment>
-      <div class="preloader">
-        <div class="p-wrapper">
-          <div class="spinner">
+      <div className="preloader">
+        <div className="p-wrapper">
+          <div className="spinner">
             <i></i>
             <i></i>
             <i></i>

@@ -14,7 +14,7 @@ class PaintingProvider extends Component {
   componentDidMount() {
     client.getEntries()
       .then((response) => {
-        console.log(response)
+        // console.log(response)
         this.setState({
           paintings: response.items
         })
