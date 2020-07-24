@@ -617,6 +617,13 @@
     font-size: 18px;
   }
   /* xsmxmsk */
+  .carousel {
+    display: flex;
+  flex-direction: column;
+  }
+  /* .client-content {
+    background-color: red;
+  } */
   .logo {
     width: 50%;
   }
