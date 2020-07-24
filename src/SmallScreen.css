@@ -554,6 +554,24 @@
   .recent-top h3 {
     font-size: 18px;
   }
+  .logo {
+    width: 50%;
+  }
+  .bottom-img-small-screen{
+    margin-bottom: .1px;
+  }
+  .bottom-img{
+    margin-bottom: -3rem;
+  }
+  .recent-project {
+    margin-top: -1.6rem;
+  }
+  .completed-project {
+    margin-top: -1rem;
+  }
+  .completed-project p {
+    margin-top: -1rem;
+  }
   section.footer-nav {
     padding: 40px 0px;
   }
