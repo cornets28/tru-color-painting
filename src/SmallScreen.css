@@ -11,6 +11,10 @@
 }
 /* Large devices (desktops, less than 1200px)*/
 @media only screen and (max-width: 1199px) {
+  .pro-ask-content {
+    margin-top: -2rem;
+    margin-bottom: -3.5rem;
+  }
   .paint-nav .navbar-light .navbar-nav .nav-link {
     padding: 30px 0px;
     min-width: 70px;
@@ -76,6 +80,21 @@
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .completed-project {
+    margin-top: -0.5rem;
+  }
+  .navbar-nav.hp-1-nav {
+    background-image: url(/images/nav-backg.png);
+    left: 220px;
+    width: 77%;
+    top: 17px;
+  }
+  .navbar-nav.hp-1-nav h6 {
+    color: var(--defaultDark);
+  }
+  .completed-project {
+    margin-top: 6rem;
+  }
   .paint-nav .navbar-light .navbar-nav .nav-link {
     font-size: 11px;
     padding: 10px 10px;
@@ -106,9 +125,21 @@
     text-align: center;
     height: auto;
   }
-  /* .btn-learn-2 {
-    padding: 42px 0px;
-  } */
+  .logo {
+    width: 50%;
+  }
+  .completed-project {
+    margin-top: -0.5rem;
+  }
+  .completed-project p {
+    margin-top: -1rem;
+  }
+
+  .pro-ask-content {
+    margin-top: -2rem;
+    margin-bottom: -3.5rem;
+  }
+
   .paint-nav .navbar-brand img {
     height: 45px;
   }
@@ -194,10 +225,7 @@
     padding: 5px 0px;
     width: 63%;
   }
-  
-  /* ul.single-footer-widget li {
-    line-height: 28px;
-  } */
+
   .sicon {
     height: 30px;
     width: 30px;
@@ -251,7 +279,7 @@
   .os-content p {
     width: 70%;
   }
-  
+
   section.contact-us {
     padding: 20px 0px;
   }
@@ -268,7 +296,7 @@
   .estimate-card label {
     margin-left: 5px;
   }
- 
+
   .project-ask-2 {
     margin-top: 40px;
   }
@@ -295,16 +323,16 @@
   }
 
   ul.navbar-nav::-webkit-scrollbar-track {
-    background: #fab32b;
+    background: var(--darkYellow);
   }
 
   ul.navbar-nav::-webkit-scrollbar-thumb {
-    background: #ffa868;
+    background: var(--darkOrange);
   }
 
   /* Handle on hover */
   ul.navbar-nav::-webkit-scrollbar-thumb:hover {
-    background: #ffa868;
+    background: var(--darkOrange);
   }
 
   .paint-nav .navbar-light .navbar-nav li.nav-item {
@@ -318,6 +346,19 @@
 
 /*Small devices (landscape phones, less than 768px)*/
 @media only screen and (max-width: 767px) {
+  .logo {
+    width: 50%;
+  }
+  .completed-project {
+    margin-top: -0.5rem;
+  }
+  .completed-project p {
+    margin-top: -1rem;
+  }
+  .pro-ask-content {
+    margin-top: -2rem;
+    margin-bottom: -3.5rem;
+  }
   .sp-subscription-form .sp-input h4 {
     left: 0px;
   }
@@ -431,7 +472,7 @@
   .subscribe-top:before {
     left: 0;
     background-size: cover;
-    background-color: #f4d652;
+    background-color: var(--lightYellow);
   }
   .sp-subscription-form {
     padding-top: 25px;
@@ -460,7 +501,7 @@
     padding-bottom: 5px;
     font-size: 13px;
   }
-  
+
   #quote-carousel .carousel-indicators {
     display: inherit;
   }
@@ -503,6 +544,15 @@
 
 /*Extra small devices (portrait phones, less than 576px)*/
 @media only screen and (max-width: 575px) {
+  .logo {
+    width: 50%;
+  }
+  .completed-project {
+    margin-top: -1rem;
+  }
+  .completed-project p {
+    margin-top: -1rem;
+  }
   .about h2 {
     font-size: 28px;
     width: 100%;
@@ -511,18 +561,31 @@
 
 /*Extra small devices (portrait phones, less than 512px)*/
 @media only screen and (max-width: 512px) {
+  .logo {
+    width: 50%;
+  }
+  .completed-project {
+    margin-top: -0.5rem;
+  }
+  .completed-project p {
+    margin-top: -1rem;
+  }
   .recent-top h3 {
     font-size: 20px;
   }
   .pro-ask-content h1 {
     font-size: 26px;
   }
+  .pro-ask-content {
+    margin-top: -2rem;
+    margin-bottom: -3.5rem;
+  }
 
   .o-e-content h1 {
     font-size: 33px;
     line-height: 40px;
   }
- 
+
   .er-text p {
     line-height: 17px;
     font-size: 12px;
@@ -547,30 +610,34 @@
   .flaticon-:focus {
     margin: 32% 43%;
   }
-  
 }
 /*Extra small devices (portrait phones, less than 475px)*/
 @media only screen and (max-width: 475px) {
   .recent-top h3 {
     font-size: 18px;
   }
+  /* xsmxmsk */
   .logo {
     width: 50%;
-  }
-  .bottom-img-small-screen{
-    margin-bottom: .1px;
-  }
-  .bottom-img{
-    margin-bottom: -3rem;
-  }
-  .recent-project {
-    margin-top: -1.6rem;
   }
   .completed-project {
     margin-top: -1rem;
   }
   .completed-project p {
     margin-top: -1rem;
+  }
+  .bottom-img-small-screen {
+    margin-bottom: 0.1px;
+  }
+  .bottom-img {
+    margin-bottom: -3rem;
+  }
+  .recent-project {
+    margin-top: -1.6rem;
+  }
+  .pro-ask-content {
+    margin-top: -2rem;
+    margin-bottom: -3.5rem;
   }
   section.footer-nav {
     padding: 40px 0px;
@@ -610,7 +677,7 @@
   .prj-1-content p {
     font-size: 15px !important;
   }
- 
+
   .st-s-icon {
     left: 7%;
   }
@@ -636,7 +703,6 @@
   .st-s-icon {
     left: 5%;
   }
- 
 }
 
 @media only screen and (max-width: 387px) {
@@ -681,5 +747,4 @@
     font-size: 22px;
     line-height: 28px;
   }
-  
 }
