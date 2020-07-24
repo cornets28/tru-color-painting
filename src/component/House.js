@@ -7,7 +7,7 @@ export default class House extends Component {
     return (
       <div className="recent-project">
         <div className="row">
-          <div className="col-md-6 bottom-img">
+          <div className="col-md-6 bottom-img bottom-img-small-screen">
             <div className="project-1">
               <img src={imgBefore.fields.file.url} alt="After Painting" />
               <h4 className="after">Before</h4>
