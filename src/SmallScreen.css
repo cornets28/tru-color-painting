@@ -77,6 +77,9 @@
   .paint-nav .navbar-light .navbar-nav .last-child {
     padding-left: 20px;
   }
+  .testimonial-nav {
+    margin-bottom: 1rem;
+  }
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -102,11 +105,20 @@
   .paint-nav .navbar-light .navbar-nav li.nav-item {
     min-width: 82px;
   }
+  .testimonial-nav p {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 992px) {
   .dropdown:hover {
     display: block;
+  }
+  .client-content {
+    margin-top: 6rem;
+  }
+  .testimonial-nav p {
+    width: 100%;
   }
 }
 
@@ -221,9 +233,9 @@
   }
 
   .client-content p {
-    text-align: center;
+    text-align: center; 
     padding: 5px 0px;
-    width: 63%;
+    width: 100%;
   }
 
   .sicon {
@@ -341,6 +353,12 @@
   }
   .navbar-nav li.nav-item ul li.dropdown-item {
     text-align: center;
+  }
+  .client-content {
+    margin-top: -1rem;
+  }
+  .testimonial-nav p {
+    width: 100%;
   }
 }
 
@@ -540,6 +558,9 @@
   .pro-ask-content-2 p {
     width: 100%;
   }
+  .client-content {
+    margin-top: -1rem;
+  }
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
@@ -556,6 +577,9 @@
   .about h2 {
     font-size: 28px;
     width: 100%;
+  }
+  .client-content {
+    margin-top: -1rem;
   }
 }
 
@@ -579,6 +603,9 @@
   .pro-ask-content {
     margin-top: -2rem;
     margin-bottom: -3.5rem;
+  }
+  .client-content {
+    margin-top: -1rem;
   }
 
   .o-e-content h1 {
@@ -617,13 +644,7 @@
     font-size: 18px;
   }
   /* xsmxmsk */
-  /* .carousel {
-    display: flex;
-  flex-direction: column;
-  } */
-  /* .client-content {
-    background-color: red;
-  } */
+
   .logo {
     width: 50%;
   }
@@ -648,6 +669,9 @@
   }
   section.footer-nav {
     padding: 40px 0px;
+  }
+  .client-content {
+    margin-top: -1rem;
   }
   .prj-two h4 {
     padding-top: 16%;
