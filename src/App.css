@@ -5,6 +5,7 @@
   --darkYellow: #d49836;
   --defaultWhite: #f3f3f3;
   --defaultDark: #000;
+  --darkShadow:;
   --darkOrange: #e46a29;
   --darkerOrange: #f06f14;
   --transparentYellow: #ffe36855;
@@ -666,9 +667,7 @@ img {
   padding-top: 10px;
   margin: 0px auto;
 }
-/* .card.estimate-card.e-card-2 {
-    margin-top: -100px;
-} */
+
 .card.estimate-card.es-card-2 {
   margin-top: -37px;
   margin: 0px auto;
@@ -891,7 +890,7 @@ section.wepaint-thecolor {
 }
 /* --- end we paint color --- */
 
-/* 7.2 Our-Experience */
+/* -- Our-Experience --- */
 .our-experience {
   padding: 100px 0px;
   background-image: url(/images/our-eperience.png);
@@ -947,7 +946,7 @@ section.wepaint-thecolor {
   color: var(--defaultDark);
 }
 
-/* End Our-Experience */
+/* --- End Our-Experience ---- */
 
 /* --- Our Team ---*/
 section.our-team {
@@ -1146,6 +1145,97 @@ button.btn-block.ebtn-r {
 }
 /* --- end Painting form --- */
 
+/* --- testimonies --- */
+section.blog-details {
+    position: relative;
+    padding: 60px 0px 100px;
+    margin-top: 8rem;
+}
+section.blog-details h2.testimoies-text{
+ text-align: center;
+ color: var(--darkBleu);
+}
+section.blog-details h2{
+ color: var(--darkBleu);
+}
+.single-comment{
+    position: relative;
+    padding: 20px;
+    margin-bottom: 50px;
+    background-color: rgba(199, 196, 196, 0.424);
+}
+.sc-image {
+    float: left;
+}
+.sc-image img {
+    width: 65px;
+    height: 65px;
+}
+.sc-head {
+    position: relative;
+    display: inline-block;
+    padding-left: 20px;
+}
+.sc-head h2 {
+    color: #141414;
+    font-weight: 500;
+}
+.client-coment h2 {
+    color: #2f3031;
+    font-weight: 500;
+}
+.sc-details {
+    position: relative;
+    padding: 20px 30px 20px 82px;
+    display: inline-block;
+}
+.sc-details p {
+    font-size: 17px;
+}
+.comment-box {
+    position: relative;
+}
+.cc-submit {
+    text-align: right;
+    position: relative;
+}
+.sc-reply {
+    padding-top: 20px;
+    font-size: 18px;
+    font-family: 'Arvo', serif;
+}
+.sc-reply a:hover{
+    text-decoration: none;
+    color: var(--defaultDark);
+}
+.cb-input {
+    border-radius: inherit;
+    background-color: #f9f9f9;
+    border: 1px solid #f0f0f0;
+    margin: 22px auto;
+    text-align: left;
+}
+::placeholder {
+    color: #d0d0d0!important;
+}
+.cb-input:focus{
+    outline-style: none;
+    box-shadow: none;
+    border-color: var(--lightYellow);
+}
+button.ccs-btn {
+    background-color: #1c1a1a;
+    position: relative;
+    font-family: 'Arvo', serif;
+    padding: 12px 30px;
+    border: none;
+    color: var(--defaultWhite);
+    margin-left: 0;
+    margin-right: auto;
+    display: inline-block;
+    cursor: pointer;
+}
+/* --- End testimonies --- */
 /* --- footer-nav --- */
 .subscribe-top {
   position: relative;

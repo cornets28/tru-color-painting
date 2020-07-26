@@ -46,20 +46,25 @@ export default class Navbar extends Component {
 
                   <li className="nav-item">
                     <Link className="nav-link" to="/details">
-                      <h6>House Details</h6>
+                      <h6>More Projects</h6>
                     </Link>
                   </li>
-
                   <li className="nav-item">
+                    <Link className="nav-link" to="/testimonies">
+                      <h6>Testimonies</h6>
+                    </Link>
+                  </li>
+                 
+                  {/* <li>
                     <div
                       className="nav-link mest"
                       data-toggle="modal"
                       data-target="#exampleModalCenter"
                       // to="/"
                     >
-                      <h6>Add Image</h6>
+                     
                     </div>
-                  </li>
+                  </li> */}
                   <li className="nav-item">
                     <a
                       className="nav-link last-child"
