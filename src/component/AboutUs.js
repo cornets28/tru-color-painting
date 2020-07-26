@@ -148,23 +148,25 @@ export default class AboutUs extends Component {
                           }}
                         </PaintingConsumer>
                       </div>
-                      <div>
-                        <div className="testimonial-nav">
-                          <a
-                            data-slide="prev"
-                            href="#quote-carousel"
-                            className="left carousel-control btn-prev"
-                          >
-                            <i className="fa fa-chevron-left"></i>
-                          </a>
-                          <a
-                            data-slide="next"
-                            href="#quote-carousel"
-                            className="right carousel-control btn-next"
-                          >
-                            <i className="fa fa-chevron-right"></i>
-                          </a>
-                        </div>
+
+                      <div className="trup-ainting-text">
+                        <h5>Tru Color Painting</h5>
+                      </div>
+                      <div className="testimonial-nav">
+                        <a
+                          data-slide="prev"
+                          href="#quote-carousel"
+                          className="left carousel-control btn-prev"
+                        >
+                          <i className="fa fa-chevron-left"></i>
+                        </a>
+                        <a
+                          data-slide="next"
+                          href="#quote-carousel"
+                          className="right carousel-control btn-next"
+                        >
+                          <i className="fa fa-chevron-right"></i>
+                        </a>
                       </div>
                     </div>
                   </div>
