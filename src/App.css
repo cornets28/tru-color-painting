@@ -716,14 +716,12 @@ img {
     width: 100%;
 }
 .client-image img{
-    height: 772px;
-    width: 100%;
+    height: 652px;
     padding-top: 50px;
     overflow: hidden;
-    
 }
 .client-content {
-    padding: 148px 0px;
+    padding: 98px 0px;
 }
 .client-content h3 {
     font-weight: bold;
@@ -732,10 +730,10 @@ img {
 }
 .client-content p {
     text-align: left;
-    width: 100%;
+    width: 48%;
 }
 .client-content p:first-child {
-    
+    font-family: 'Arvo', serif;
 }
 .client-content p:last-child {
     font-family: 'Muli', sans-serif;
@@ -762,7 +760,7 @@ img {
     width: 40px;
     height: 40px;
     cursor: pointer;
-    border: 1px solid var(--defaultWhite);
+    border: 1px solid #ccc;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     opacity: 1;
@@ -792,14 +790,14 @@ img {
     font-size: 24px !important;
     border: 1px solid;
     padding: 0px 8px;
-    color: var(--defaultDark) !important;
+    color: #000000 !important;
 }
 .btn-next{
     font-size: 24px !important;
     border: 1px solid;
     margin-left: 13px;
     padding: 0px 8px;
-    color: var(--defaultDark) !important;
+    color: #000000 !important;
 }
 .testimo-slide p{
     font-size: 22px;
@@ -813,10 +811,6 @@ img {
     top: 0;
     left: 0;
     right: 0;
-}
-.carousel-inner {
-  margin-bottom: 1rem;
-  position: absolute;
 }
 
 /* --- End Client Feedback --- */
