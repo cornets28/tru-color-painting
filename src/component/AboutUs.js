@@ -160,34 +160,20 @@ export default class AboutUs extends Component {
                             src="assets/images/slider/c-1.jpg"
                             alt=""
                           />
-                        </li>
-                        <li data-target="#quote-carousel" data-slide-to="1">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/slider/c-2.jpg"
-                            alt=""
-                          />
-                        </li>
-                        <li data-target="#quote-carousel" data-slide-to="2">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/slider/c-3.jpg"
-                            alt=""
-                          />
-                        </li>
-                        <li data-target="#quote-carousel" data-slide-to="3">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/slider/c-4.jpg"
-                            alt=""
-                          />
-                        </li>
-                        <li data-target="#quote-carousel" data-slide-to="4">
-                          <img
-                            class="img-fluid"
-                            src="assets/images/slider/c-5.jpg"
-                            alt=""
-                          />
+                          <PaintingConsumer>
+                            {(value) => {
+                              return value.carouselPics.map((carousPhoto) => {
+                                return (
+                                  <div className="img-fluid">
+                                    <Carousel
+                                      key={carousPhoto.id}
+                                      carousPhoto={carousPhoto}
+                                    />
+                                  </div>
+                                );
+                              });
+                            }}
+                          </PaintingConsumer>
                         </li>
                       </ol>
                       <div className="testimonial-nav">
