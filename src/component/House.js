@@ -15,7 +15,13 @@ export default class House extends Component {
                 <div className="p-icon">
                   <span className="flaticon-repair ficon-pj-1 ficon-pj-2"></span>
                 </div>
-                <h4>Tru Color Painting For Your Dream!</h4>
+                <h4>
+                  {" "}
+                  <span className="color-tru">Tru</span>{" "}
+                  <span className="color-color">Color</span>{" "}
+                  <span className="color-painting">Painting</span> For Your
+                  Dream!
+                </h4>
                 <p>{description}</p>
               </div>
             </div>
@@ -28,7 +34,13 @@ export default class House extends Component {
                 <div className="p-icon">
                   <span className="flaticon-repair ficon-pj-1 ficon-pj-2"></span>
                 </div>
-                <h4>Tru Color Painting For Your Dream!</h4>
+                <h4>
+                  {" "}
+                  <span className="color-tru">Tru</span>{" "}
+                  <span className="color-color">Color</span>{" "}
+                  <span className="color-painting">Painting</span> For Your
+                  Dream!
+                </h4>
                 <p>{description}</p>
               </div>
             </div>

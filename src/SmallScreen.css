@@ -108,6 +108,9 @@
   .testimonial-nav p {
     width: 100%;
   }
+   .prj-1-content h4{
+    margin-top: -5rem;
+  }
 }
 
 @media only screen and (min-width: 992px) {
@@ -283,7 +286,7 @@
     line-height: 33px;
   }
   .st-member {
-    height: 330px;
+    height: 260px;
   }
   .st-s-icon {
     left: 1%;
@@ -359,6 +362,9 @@
   }
   .testimonial-nav p {
     width: 100%;
+  }
+  .prj-1-content h4{
+    margin-top: -2.5rem;
   }
 }
 
@@ -538,7 +544,7 @@
   }
 
   .st-member {
-    height: 500px;
+    height: 400px;
   }
   .st-s-icon {
     left: 15%;
@@ -561,6 +567,10 @@
   .client-content {
     margin-top: -1rem;
   }
+  .prj-1-content h4{
+    margin-top: -.3rem;
+  }
+ 
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
@@ -581,6 +591,10 @@
   .client-content {
     margin-top: -1rem;
   }
+  .prj-1-content h4{
+    margin-top: -2.5rem;
+  }
+  
 }
 
 /*Extra small devices (portrait phones, less than 512px)*/
@@ -617,10 +631,20 @@
     line-height: 17px;
     font-size: 12px;
   }
+  .prj-1-content h4{
+    margin-top:1.5rem;
+  }
+  
 }
 @media only screen and (max-width: 484px) {
   .er-text p {
     font-size: 11px;
+  }
+  .st-member {
+    height: 430px;
+  }
+  .prj-1-content h4{
+    margin-top: -.5rem;
   }
 }
 
@@ -636,6 +660,12 @@
   }
   .flaticon-:focus {
     margin: 32% 43%;
+  }
+  .st-member {
+    height: 350px;
+  }
+  .prj-1-content h4{
+    margin-top: 1rem;
   }
 }
 /*Extra small devices (portrait phones, less than 475px)*/
@@ -683,6 +713,12 @@
   }
   .st-s-icon {
     left: 10%;
+  }
+  .st-member {
+    height: 350px;
+  }
+  .prj-1-content h4{
+    margin-top: -.1rem;
   }
 }
 
@@ -733,6 +769,9 @@
   }
   .st-s-icon {
     left: 5%;
+  }
+  .prj-1-content h4{
+    margin-top: 1.7rem;
   }
 }
 
