@@ -101,28 +101,28 @@ export const carouselPhotos = [
 ];
 
 export const team = [
-         {
-           id: 1,
-           firstname: "Frants",
-           lastname: "Elliassaint",
-           photo: "images/team-members/member-2.jpg",
-           position: "CEO, Founder & Painter",
-           facebooLink: "https://www.facebook.com/trucolour.painting.1",
-         },
-         {
-           id: 2,
-           firstname: "Samuel",
-           lastname: "Cornet",
-           photo: "images/team-members/member-1.jpg",
-           position: "CO Founder",
-           facebooLink: "https://www.facebook.com/samuel.cornet",
-         },
-         {
-           id: 3,
-           firstname: "Nadia",
-           lastname: "Salien",
-           photo: "images/team-members/member-3.jpg",
-           position: "Accountant",
-           facebooLink: "https://www.facebook.com/samuel.cornet",
-         },
-       ];
+  {
+    id: 1,
+    firstname: "Frants",
+    lastname: "Elliassaint",
+    photo: "images/team-members/member-2.jpg",
+    position: "CEO, Founder & Painter",
+    facebooLink: "https://www.facebook.com/trucolour.painting.1",
+  },
+  {
+    id: 2,
+    firstname: "Samuel",
+    lastname: "Cornet",
+    photo: "images/team-members/member-1.jpg",
+    position: "CO Founder",
+    facebooLink: "https://www.facebook.com/samuel.cornet",
+  },
+  {
+    id: 3,
+    firstname: "Nadia",
+    lastname: "Salien",
+    photo: "images/team-members/member-3.jpg",
+    position: "Accountant",
+    facebooLink: "https://www.facebook.com/samuel.cornet",
+  },
+];

@@ -6,9 +6,6 @@ import Carousel from "./Carousel";
 import TeamMember from "./TeamMember";
 
 export default class AboutUs extends Component {
-  // state = {
-  //   teamMembers: team,
-  // };
   render() {
     return (
       <React.Fragment>
@@ -25,7 +22,6 @@ export default class AboutUs extends Component {
               </div>
               <div className="col-md-7">
                 <div className="client-content">
-                  <p>We Love What We Do</p>
                   <h3 data-aos="zoom-in">We Can Paint You Dream House</h3>
                   <p>
                     Fall In Love With Your House By Choosing Us. Highest quality
@@ -51,6 +47,7 @@ export default class AboutUs extends Component {
 
                         <PaintingConsumer>
                           {(value) => {
+                            // console.log(value);
                             return value.carouselPics.map((carousPhoto) => {
                               return (
                                 <Carousel
@@ -63,6 +60,103 @@ export default class AboutUs extends Component {
                         </PaintingConsumer>
                       </div>
 
+                      <ol className="carousel-indicators testimo-indicat">
+                        <li
+                          data-target="#quote-carousel"
+                          data-slide-to="0"
+                          className="active"
+                        >
+                          <img
+                            className="img-fluid"
+                            src="images/house-1.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1">
+                          <img
+                            className="img-fluid"
+                            src="images/house-2.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2">
+                          <img
+                            className="img-fluid"
+                            src="images/house-3.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="3">
+                          <img
+                            className="img-fluid"
+                            src="images/house-4.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-5.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-6.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-7.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-8.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-9.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-10.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-11.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-12.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            className="img-fluid"
+                            src="images/house-13.jpg"
+                            alt=""
+                          />
+                        </li>
+                      </ol>
                       <div className="testimonial-nav">
                         <a
                           data-slide="prev"
@@ -81,40 +175,6 @@ export default class AboutUs extends Component {
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section className="wepaint-thecolor">
-          <div className="container">
-            <div className="row">
-              <div className="col-md-6">
-                <div className="colo-content">
-                  <h2>We Offer A Huge Variety Of Colors!</h2>
-                  <p>
-                    Tru Color Painting is painting company located in Canada.
-                    Notably, in Antigonish at Scotia Nova. We work for all
-                    companies or individuals as long as they are located in
-                    Canada.
-                  </p>
-                  <p>
-                    We have been performing in the painting for more than three
-                    years and have always meeting our customer expectations,
-                    needs, and satisfactions. At Tru Color Painting, We love
-                    what we.
-                  </p>
-                  <div className="btn-learn">
-                    <span className="learn-ab">
-                      <Link to="/"> See Our Works</Link>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6">
-                <div className="color-image wow zoomIn" data-wow-delay=".3s">
-                  <img src="images/color.png" alt="" />
                 </div>
               </div>
             </div>
@@ -226,15 +286,43 @@ export default class AboutUs extends Component {
               <PaintingConsumer>
                 {(value) => {
                   return value.teamMembers.map((member) => {
-                    return (
-                      <TeamMember
-                        key={member.id}
-                        member={member}
-                      />
-                    );
+                    return <TeamMember key={member.id} member={member} />;
                   });
                 }}
               </PaintingConsumer>
+            </div>
+          </div>
+        </section>
+        <section className="wepaint-thecolor">
+          <div className="container">
+            <div className="row">
+              <div className="col-md-6">
+                <div className="colo-content">
+                  <h2>We Offer A Huge Variety Of Colors!</h2>
+                  <p>
+                    Tru Color Painting is painting company located in Canada.
+                    Notably, in Antigonish at Scotia Nova. We work for all
+                    companies or individuals as long as they are located in
+                    Canada.
+                  </p>
+                  <p>
+                    We have been performing in the painting for more than three
+                    years and have always meeting our customer expectations,
+                    needs, and satisfactions. At Tru Color Painting, We love
+                    what we.
+                  </p>
+                  <div className="btn-learn">
+                    <span className="learn-ab">
+                      <Link to="/">See Our Works</Link>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div className="col-md-6">
+                <div className="color-image wow zoomIn" data-wow-delay=".3s">
+                  <img src="images/color.png" alt="" />
+                </div>
+              </div>
             </div>
           </div>
         </section>
@@ -242,4 +330,3 @@ export default class AboutUs extends Component {
     );
   }
 }
-

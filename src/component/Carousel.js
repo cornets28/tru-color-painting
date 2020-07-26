@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 export default class Carousel extends Component {
   render() {
+    // eslint-disable-next-line no-unused-vars
     const { id, imgCarousel } = this.props.carousPhoto;
     return (
       <div className="item carousel-item">

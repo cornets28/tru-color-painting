@@ -9,14 +9,15 @@ import HouseList from "./component/HouseList";
 import HouseDetails from "./component/HouseDetails";
 import PageNotFound from "./component/PageNotFound";
 import Footer from "./component/Footer";
+import "./SmallScreen.css";
 
 
 function App() {
   return (
     <React.Fragment>
-      {/* <div class="preloader">
-        <div class="p-wrapper">
-          <div class="spinner">
+      <div className="preloader">
+        <div className="p-wrapper">
+          <div className="spinner">
             <i></i>
             <i></i>
             <i></i>
@@ -26,7 +27,7 @@ function App() {
             <i></i>
           </div>
         </div>
-      </div> */}
+      </div>
       <Navbar />
       <Switch>
         <Route exact path="/" component={HouseList} />

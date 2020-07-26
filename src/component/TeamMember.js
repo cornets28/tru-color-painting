@@ -7,6 +7,7 @@ import React, { Component } from 'react';
 export default class TeamMember extends Component {
   
   render() {
+    // eslint-disable-next-line no-unused-vars
     const {id, firstname, lastname, photo, position, facebookLink } = this.props.member
     
     return (
@@ -18,7 +19,7 @@ export default class TeamMember extends Component {
               <li>
                 {/* <Link to={()=>this.props.history.push(facebookLink)}> */}
                 <i
-                  onClick={(event) => (window.location.href = facebookLink)}
+                  onClick={() => (window.location.href = facebookLink)}
                   className="fab fa-facebook-f sicon sticon"
                 ></i>
                 {/* </Link> */}
