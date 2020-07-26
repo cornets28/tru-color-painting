@@ -157,23 +157,93 @@ export default class AboutUs extends Component {
                         >
                           <img
                             class="img-fluid"
-                            src="assets/images/slider/c-1.jpg"
+                            src="images/house-1.jpg"
                             alt=""
                           />
-                          <PaintingConsumer>
-                            {(value) => {
-                              return value.carouselPics.map((carousPhoto) => {
-                                return (
-                                  <div className="img-fluid">
-                                    <Carousel
-                                      key={carousPhoto.id}
-                                      carousPhoto={carousPhoto}
-                                    />
-                                  </div>
-                                );
-                              });
-                            }}
-                          </PaintingConsumer>
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="1">
+                          <img
+                            class="img-fluid"
+                            src="images/house-2.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="2">
+                          <img
+                            class="img-fluid"
+                            src="images/house-3.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="3">
+                          <img
+                            class="img-fluid"
+                            src="images/house-4.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-5.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-6.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-7.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-8.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-9.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-10.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-11.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-12.jpg"
+                            alt=""
+                          />
+                        </li>
+                        <li data-target="#quote-carousel" data-slide-to="4">
+                          <img
+                            class="img-fluid"
+                            src="images/house-13.jpg"
+                            alt=""
+                          />
                         </li>
                       </ol>
                       <div className="testimonial-nav">
