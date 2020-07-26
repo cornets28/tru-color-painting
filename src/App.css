@@ -5,7 +5,7 @@
   --darkYellow: #d49836;
   --defaultWhite: #f3f3f3;
   --defaultDark: #000;
-  /* --darkShadow:; */
+  --darkShadow:;
   --darkOrange: #e46a29;
   --darkerOrange: #f06f14;
   --transparentYellow: #ffe36855;
@@ -1153,12 +1153,16 @@ section.blog-details {
 }
 section.blog-details h2.testimoies-text{
  text-align: center;
+ color: var(--darkBleu);
+}
+section.blog-details h2{
+ color: var(--darkBleu);
 }
 .single-comment{
     position: relative;
     padding: 20px;
     margin-bottom: 50px;
-    background-color: var(--defaultWhite);
+    background-color: rgba(199, 196, 196, 0.424);
 }
 .sc-image {
     float: left;
