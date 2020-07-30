@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { carouselPhotos, team } from "./data";
 import {client} from './client';
 // import base from './component/firebase';
-import { storage } from "./component/firebase";
+// import { storage } from "./component/firebase";
 
 const PaintingContext = React.createContext();
 

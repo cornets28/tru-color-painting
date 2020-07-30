@@ -2,8 +2,6 @@
 import React, { Component } from "react";
 import fire from './firebase'
 
-
-// www.youtube.com/watch?v=vmLaZafaw9E&t=269s
  export default class PaintingForm extends Component {
   state = {
     testimony: "",
@@ -18,6 +16,7 @@ import fire from './firebase'
 
   onSubmit = (e) => {
     e.preventDefault();
+    // eslint-disable-next-line no-unused-vars
     let testimonyRef = fire.database().ref('testimonies').orderByKey().limitToLast(100) 
     fire.database().ref("testimonies").push(this.state);
     // console.log(this.state);
