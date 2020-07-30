@@ -1,7 +1,8 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+/* eslint-disable jsx-a11y/anchor-is-valid */
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
-import Logo from '../logo.png'
+import Logo from "../logo.png";
 
 export default class Navbar extends Component {
   render() {
@@ -45,26 +46,19 @@ export default class Navbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" to="/details">
-                      <h6>More Projects</h6>
-                    </Link>
-                  </li>
-                  <li className="nav-item">
                     <Link className="nav-link" to="/testimonies">
                       <h6>Testimonies</h6>
                     </Link>
                   </li>
-                 
-                  {/* <li>
-                    <div
+                  <li className="nav-item">
+                    <a
                       className="nav-link mest"
                       data-toggle="modal"
                       data-target="#exampleModalCenter"
-                      // to="/"
                     >
-                     
-                    </div>
-                  </li> */}
+                      <h6>Add A Testimony </h6>
+                    </a>
+                  </li>
                   <li className="nav-item">
                     <a
                       className="nav-link last-child"

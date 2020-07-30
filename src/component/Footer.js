@@ -1,20 +1,22 @@
-import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
-// import PaintingForm from './PaintingForm';
+import React, { Component } from "react";
+import { Link } from "react-router-dom";
+import PaintingForm from './PaintingForm';
 
 export default class Footer extends Component {
   render() {
     return (
       <>
-      {/* <section>
+      <section>
         <PaintingForm />
-      </section> */}
+      </section>
         <section className="project-ask">
           <div className="container">
             <div className="pro-ask-content">
               <h1 data-aos="slide-in-left">Do You Have Any Project?</h1>
               <p>
-                Feel free to contact us at any time either by e-mail or by phone. We provide highest quality work at the best price. Our name says it all!
+                Feel free to contact us at any time either by e-mail or by
+                phone. We provide highest quality work at the best price. Our
+                name says it all!
               </p>
               <div className="btn-contact" data-wow-delay=".5s">
                 <span className="con-btn">
