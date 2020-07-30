@@ -1073,7 +1073,7 @@ section.our-team {
 }
 .estimate-card h2 {
   padding: 20px 0px 5px;
-  color: var(--defaultWhite);
+  color: var(--darkOrange);
   font-size: 34px;
   font-weight: bold;
   text-align: center;
@@ -1089,26 +1089,32 @@ section.our-team {
 span.e-ctl {
   font-size: 14px;
 }
-.estimate-card input.form-control {
+.estimate-card input.form-control{
   border-radius: inherit;
   background: #1d252d36;
   color: var(--darkOrange);
 }
-.estimate-card input.form-control:focus {
+.estimate-card input.form-control, textarea.form-control{
+  border-radius: inherit;
+  background: #1d252d36;
+  color: var(--darkOrange);
+}
+
+.estimate-card input.form-control:focus{
   outline-style: none;
   box-shadow: none;
   color: var(--defaultWhite);
   border-color: var(--darkYellow);
 }
-.estimate-card input.form-control::placeholder {
+.estimate-card textarea.form-control:focus{
+  outline-style: none;
+  box-shadow: none;
+  background: #1d252d36;
+  color: var(--defaultWhite);
+  border-color: var(--darkYellow);
+}
+.estimate-card input.form-control::placeholder, textarea.form-control:focus {
   color: #737a80 !important;
-}
-.estimate-card label input[type="radio"] {
-  transform: scale(1.5);
-  margin-left: 20px;
-}
-.estimate-card label:first-child input[type="radio"] {
-  margin-left: 0px;
 }
 
 button.btn-block.ebtn {
@@ -1155,7 +1161,7 @@ section.blog-details h2.testimoies-text{
  text-align: center;
  color: var(--darkBleu);
 }
-section.blog-details h2{
+section.blog-details h2.testimoies-text{
  color: var(--darkBleu);
 }
 .single-comment{
