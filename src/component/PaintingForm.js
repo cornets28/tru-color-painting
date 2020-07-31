@@ -1,12 +1,26 @@
 /* eslint-disable no-undef */
 import React, { Component } from "react";
-import fire from './firebase'
+import fire from "./firebase";
 
- export default class PaintingForm extends Component {
-  state = {
-    testimony: "",
-    fullName: "",
-  };
+export default class PaintingForm extends Component {
+  constructor() {
+    super();
+
+    const today = new Date(),
+      date =
+        today.getDate() +
+        "-" +
+        (today.getMonth() + 1) +
+        "-" +
+        
+        today.getFullYear();
+
+    this.state = {
+      testimony: "",
+      fullName: "",
+      date: date,
+    };
+  }
 
   handleInputChange = (e) => {
     this.setState({
@@ -17,7 +31,11 @@ import fire from './firebase'
   onSubmit = (e) => {
     e.preventDefault();
     // eslint-disable-next-line no-unused-vars
-    let testimonyRef = fire.database().ref('testimonies').orderByKey().limitToLast(100) 
+    let testimonyRef = fire
+      .database()
+      .ref("testimonies")
+      .orderByKey()
+      .limitToLast(100);
     fire.database().ref("testimonies").push(this.state);
     // console.log(this.state);
     this.setState({
@@ -103,4 +121,3 @@ import fire from './firebase'
     );
   }
 }
-
