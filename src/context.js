@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { carouselPhotos, team } from "./data";
-import {client} from './client';
-// import base from './component/firebase';
+import { client } from "./client";
+import fire from "./component/firebase";
 // import { storage } from "./component/firebase";
 
 const PaintingContext = React.createContext();
@@ -11,27 +11,36 @@ class PaintingProvider extends Component {
     paintings: [],
     carouselPics: carouselPhotos,
     teamMembers: team,
-    images: []
+    images: [],
+    testimonyData: [],
   };
 
   componentDidMount() {
     client
       .getEntries()
       .then((response) => {
-        // console.log(response);
         this.setState({
           paintings: response.items,
         });
       })
       .catch(console.error());
 
-      // const { params } = this.props.match;
-      // this.ref = base
-      //   .syncState(`${params.storeId}/carouselPics`, {
-      //     context: this,
-      //     state: "carouselPics",
-      //   })
-      //   .catch(console.error());
+    const database = fire.database();
+    const ref = database.ref("testimonies");
+
+    const gotData = (data) => {
+      const testimonies = data.val();
+      let testimonyVal = Object.values(testimonies);
+      this.setState({
+        testimonyData: testimonyVal,
+      });
+    };
+
+    function errData(err) {
+      console.log(err);
+    }
+
+    ref.on("value", gotData, errData);
   }
 
   render() {
