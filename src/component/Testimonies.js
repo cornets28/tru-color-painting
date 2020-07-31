@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import { PaintingConsumer } from "../context";
+import Testimony from "./Testimony";
 
 export default class Testimonies extends Component {
   render() {
@@ -10,39 +12,20 @@ export default class Testimonies extends Component {
               <div className="col-lg-8 col-md-12 offset-lg-2">
                 <h2 className="testimoies-text">Testimonies</h2>
                 <hr />
-                <div className="single-comment">
-                  <div className="sc-image">
-                    <img src="/images/cclient.png" alt="" />
-                  </div>
-                  <div className="sc-head">
-                    <h2>Robison Croso</h2>
-                    <p>11th December, 2018</p>
-                  </div>
-                  <div className="sc-details">
-                    <p>
-                      “Design must be functional, and functionality translated
-                      visual aesthetics without any reliance on gimmicks that
-                      have to be explained. Design must be functional, and
-                      function ality must be translated into.”|
-                    </p>
-                  </div>
-                </div>
 
-                <div className="single-comment">
-                  <div className="sc-image"></div>
-                  <div className="sc-head">
-                    <h2>Robison Croso</h2>
-                    <p>11th December, 2018</p>
-                  </div>
-                  <div className="sc-details">
-                    <p>
-                      “Design must be functional, and functionality translated
-                      visual aesthetics without any reliance on gimmicks that
-                      have to be explained. Design must be functional, and
-                      function ality must be translated into.”|
-                    </p>
-                  </div>
-                </div>
+                <PaintingConsumer>
+                  {(value) => {
+                    return value.testimonyData.map((testimony) => {
+                      return (
+                        <Testimony
+                          key={testimony.date + testimony.fullName}
+                          testimony={testimony}
+                        />
+                      );
+                    });
+                  }}
+                </PaintingConsumer>
+
                 <div className="client-coment">
                   <div>
                     <h2>Leave a testimony</h2>
