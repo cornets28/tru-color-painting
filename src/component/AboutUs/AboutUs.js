@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { PaintingConsumer } from "../context";
+import { PaintingConsumer } from "../../context";
 import Carousel from "./Carousel";
 // import { carouselPhotos, team } from "../data";
 import TeamMember from "./TeamMember";

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import { PaintingConsumer } from "../context";
+import { PaintingConsumer } from "../../context";
 import House from "./House";
-import { paintingHouses } from "../data";
+import { paintingHouses } from "../../data";
 
 export default class HouseList extends Component {
   state = {

@@ -1,6 +1,6 @@
 /* eslint-disable no-undef */
 import React, { Component } from "react";
-import fire from "./firebase";
+import fire from "../firebase";
 
 export default class PaintingForm extends Component {
   constructor() {

@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { carouselPhotos, team } from "./data";
-import { client } from "./client";
+import { client } from "./component/contentful/client";
 import fire from "./component/firebase";
 // import { storage } from "./component/firebase";
 

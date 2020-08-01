@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-import Logo from "../logo.png";
+import Logo from "../../logo.png";
 
 export default class Navbar extends Component {
   render() {
@@ -46,8 +46,8 @@ export default class Navbar extends Component {
                   </li>
 
                   <li className="nav-item">
-                    <Link className="nav-link" to="/testimonies">
-                      <h6>Testimonies</h6>
+                    <Link className="nav-link" to="/testimonials">
+                      <h6>Testimonials</h6>
                     </Link>
                   </li>
                   <li className="nav-item">
@@ -56,7 +56,7 @@ export default class Navbar extends Component {
                       data-toggle="modal"
                       data-target="#exampleModalCenter"
                     >
-                      <h6>Add A Testimony </h6>
+                      <h6>Add A Testimony</h6>
                     </a>
                   </li>
                   <li className="nav-item">

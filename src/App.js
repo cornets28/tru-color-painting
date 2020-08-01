@@ -1,15 +1,14 @@
 import React from "react";
-
 import { Switch, Route } from "react-router-dom";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Navbar from "./component/Navbar";
-import AboutUs from './component/AboutUs';
-import HouseList from "./component/HouseList";
-import Testimonies from "./component/Testimonies";
+import Navbar from "./component/Navbar/Navbar";
+import AboutUs from "./component//AboutUs/AboutUs";
+import HouseList from "./component/Houses/HouseList";
+import Testimonials from "./component/Testimonials/Testimonials";
 import PageNotFound from "./component/PageNotFound";
-import Footer from "./component/Footer";
-import "./SmallScreen.css";
+import Footer from "./component/Footer/Footer";
+import "./css/App.css";
+import "./css/SmallScreen.css";
 
 
 function App() {
@@ -31,7 +30,7 @@ function App() {
       <Navbar />
       <Switch>
         <Route exact path="/" component={HouseList} />
-        <Route path="/testimonies" component={Testimonies} />
+        <Route path="/Testimonials" component={Testimonials} />
         <Route path="/about-us" component={AboutUs} />
         <Route component={PageNotFound} />
       </Switch>
