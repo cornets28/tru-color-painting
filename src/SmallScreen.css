@@ -80,6 +80,7 @@
   .testimonial-nav {
     margin-bottom: 1rem;
   }
+ 
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
@@ -123,6 +124,7 @@
   .testimonial-nav p {
     width: 100%;
   }
+  
 }
 
 /* Medium devices (tablets, less than 992px)*/
@@ -366,6 +368,9 @@
   .prj-1-content h4{
     margin-top: -2.5rem;
   }
+   .testimoies-text {
+    margin-top: -17%;
+  }
 }
 
 /*Small devices (landscape phones, less than 768px)*/
@@ -570,7 +575,9 @@
   .prj-1-content h4{
     margin-top: -.3rem;
   }
- 
+  .testimoies-text {
+    margin-top: -25%;
+  }
 }
 
 /*Extra small devices (portrait phones, less than 576px)*/
@@ -593,6 +600,9 @@
   }
   .prj-1-content h4{
     margin-top: -2.5rem;
+  }
+   .testimoies-text {
+    margin-top: -28%;
   }
   
 }
@@ -634,7 +644,9 @@
   .prj-1-content h4{
     margin-top:1.5rem;
   }
-  
+   .testimoies-text {
+    margin-top: -32%;
+  }
 }
 @media only screen and (max-width: 484px) {
   .er-text p {
@@ -645,6 +657,9 @@
   }
   .prj-1-content h4{
     margin-top: -.5rem;
+  }
+   .testimoies-text {
+    margin-top: -36%;
   }
 }
 
@@ -666,6 +681,9 @@
   }
   .prj-1-content h4{
     margin-top: 1rem;
+  }
+   .testimoies-text {
+    margin-top: -43%;
   }
 }
 /*Extra small devices (portrait phones, less than 475px)*/
@@ -719,6 +737,10 @@
   }
   .prj-1-content h4{
     margin-top: -.1rem;
+  }
+   .testimoies-text {
+    margin-top: -43%;
+   
   }
 }
 
