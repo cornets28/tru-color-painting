@@ -1098,22 +1098,24 @@ span.e-ctl {
   border-radius: inherit;
   background: #1d252d36;
   color: var(--darkOrange);
+  border-color: var(--darkYellow);
+  margin-top: '2%';
 }
 
 .estimate-card input.form-control:focus{
   outline-style: none;
   box-shadow: none;
   color: var(--defaultWhite);
-  border-color: var(--darkYellow);
+  border-color: var(--darkOrange);
 }
 .estimate-card textarea.form-control:focus{
   outline-style: none;
   box-shadow: none;
   background: #1d252d36;
   color: var(--defaultWhite);
-  border-color: var(--darkYellow);
+  border-color: var(--darkOrange);
 }
-.estimate-card input.form-control::placeholder, textarea.form-control:focus {
+.estimate-card input.form-control::placeholder, textarea.form-control::placeholder {
   color: #737a80 !important;
 }
 

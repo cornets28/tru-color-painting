@@ -12,7 +12,6 @@ export default class PaintingForm extends Component {
         "-" +
         (today.getMonth() + 1) +
         "-" +
-        
         today.getFullYear();
 
     this.state = {
