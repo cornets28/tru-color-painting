@@ -62,7 +62,7 @@ export default class Navbar extends Component {
                   <li className="nav-item">
                     <a
                       className="nav-link last-child"
-                      href="tel:+4487788589(99)"
+                      href="tel:+1902870-4398"
                     >
                       <h6> Call : +1 (902) 870-4398</h6>
                     </a>
