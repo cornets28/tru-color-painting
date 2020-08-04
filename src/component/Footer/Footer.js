@@ -138,11 +138,6 @@ export default class Footer extends Component {
                         </li>
                         <li>
                           <Link to="/">
-                            <i className="fab fa-pinterest-p sicon"></i>
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/">
                             <i className="fab fa-linkedin-in sicon"></i>
                           </Link>
                         </li>
